@@ -16,7 +16,7 @@ const houseNameIdMap = {
   DC: "cf02adf7-0408-40a7-a4cb-0de18652dbc9",
   NDC: "ae612ba3-6f10-4308-921d-418c90bb96ff",
   CCH: "92550f0f-f3ae-4883-8199-8321702aa610",
-  "NBR New Building": "3ae8c5d4-4803-44c2-87d3-3eda1cbf6fd0",
+  "NBR-New-Bldg": "3ae8c5d4-4803-44c2-87d3-3eda1cbf6fd0",
   DCH: "8191e270-5870-437e-9d5e-f165c6e37ec8",
   MCH: "20ee539d-ddbf-484a-b292-73df53ce1907",
   ICD: "ed4c2458-d8d1-41a4-a666-081d80dc44e0",
@@ -26,7 +26,7 @@ const houseNameIdMap = {
   "Dhaka Bond": "8f475c68-08ff-41d8-ad96-fa466c8ce62b",
   Adamjee: "7beac6af-1d14-42fa-8396-7d692d548a75",
   "Uttara EPZ": "9a0f60a9-699c-47f8-9694-a7cf4f9831c9",
-  "Dhaka EPZ": "e37277e1-cccd-472e-a858-52e0722f53d5",
+  Dhaka_EPZ: "e37277e1-cccd-472e-a858-52e0722f53d5",
   CEPZ: "c4220097-ba72-4135-a599-f0a04efe0bb6",
   Darshana: "4b7b47b5-d50e-41a7-b6aa-28ec37b084e4",
   Bhomra: "60bc421e-a538-461b-a7b5-ba6462cba1df",
@@ -43,6 +43,7 @@ const houseNameIdMap = {
   Dhanua: "6ee7c4fd-f714-48d2-b77e-f6434f37fc5d",
   "Bibir Bazar": "3298f3b1-71c2-408e-8a7b-cb004d99bf16",
 };
+
 // Helper: find room/floor ID
 function findParentId(associationTree, floorName, roomName) {
   let parentId = null;

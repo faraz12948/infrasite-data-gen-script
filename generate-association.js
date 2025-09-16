@@ -13,6 +13,7 @@ const pgConnectionString =
   process.env.PG_CONNECTION_STRING ||
   "postgresql://root:ca-mgt@localhost:5432/insert-institutions";
 const baseUrl = process.env.BASE_URL || "http://localhost:5001";
+
 const houseNameIdMap = {
   DR: "9745ec1d-7cc3-444a-b2f9-0196de9330ce",
   DC: "cf02adf7-0408-40a7-a4cb-0de18652dbc9",
@@ -28,7 +29,7 @@ const houseNameIdMap = {
   "Dhaka Bond": "8f475c68-08ff-41d8-ad96-fa466c8ce62b",
   Adamjee: "7beac6af-1d14-42fa-8396-7d692d548a75",
   "Uttara EPZ": "9a0f60a9-699c-47f8-9694-a7cf4f9831c9",
-  "Dhaka_EPZ": "e37277e1-cccd-472e-a858-52e0722f53d5",
+  Dhaka_EPZ: "e37277e1-cccd-472e-a858-52e0722f53d5",
   CEPZ: "c4220097-ba72-4135-a599-f0a04efe0bb6",
   Darshana: "4b7b47b5-d50e-41a7-b6aa-28ec37b084e4",
   Bhomra: "60bc421e-a538-461b-a7b5-ba6462cba1df",
