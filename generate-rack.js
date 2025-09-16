@@ -6,7 +6,7 @@ const axios = require("axios");
 const client = new Client({
   user: "root",
   host: "localhost",
-  database: "insert-institutions",
+  database: "ca_mgt_v2",
   password: "ca-mgt",
   port: 5432,
 });
@@ -31,7 +31,7 @@ const houseNameIdMap = {
   Darshana: "4b7b47b5-d50e-41a7-b6aa-28ec37b084e4",
   Bhomra: "60bc421e-a538-461b-a7b5-ba6462cba1df",
   Banglabandha: "a48109ed-b0e0-44d7-b00b-6eff4d76b951",
-  Hili: "dfa39f2e-c3e1-4653-b465-4bf8da92e4c6",
+  Hilli: "dfa39f2e-c3e1-4653-b465-4bf8da92e4c6",
   Burimari: "3198c784-32d2-4ebf-901b-e2758d9c41ea",
   Sonamasjid: "1f49bca9-2891-4f1e-af08-f39fa90f3bcc",
   Teknaf: "b7266c14-7e3f-436a-8fcf-55abdfdbad67",
@@ -161,19 +161,19 @@ const sheetNames = [
   // "structure-NBR-New-Bldg",
   // "structure-dc-network",
   // "structure-dch-network",
-  // "structure-dch",
-  "structure-mch",
-  // "structure-mch_moduler",
-  // "structure-dch-summary",
-  // "structure-dch_moduler",
-  // "structure-nbr-dr-network",
-  // "structure-cch_moduler",
-  // "structure-cch",
-  // "structure-icd_moduler",
+  // "structure-dch", skipping
+  // "structure-mch",
+  // "structure-mch_moduler", issue found
+  // "structure-dch-summary", issue found
+  // "structure-dch_moduler", issue found
+  // "structure-nbr-dr-network", issue found
+  // "structure-cch_moduler", issue found
+  // "structure-cch", issue found
+  // "structure-icd_moduler", issue found
   // "structure-bch",
-  // "structure-bch_moduler",
-  // "structure-pch",
-  // "structure-pch_moduler",
+  // "structure-bch_moduler", issue found
+  // "structure-pch", string trim error
+  // "structure-pch_moduler", issue found
   // "structure-cchbond",
   // "structure-dhakabond",
   // "structure-adamjee",

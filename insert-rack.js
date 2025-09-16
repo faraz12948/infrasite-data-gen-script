@@ -6,7 +6,7 @@ const axios = require("axios");
 const client = new Client({
   user: "root",
   host: "localhost",
-  database: "insert-institutions",
+  database: "ca_mgt_v2",
   password: "ca-mgt",
   port: 5432,
 });
@@ -31,7 +31,7 @@ const houseNameIdMap = {
   Darshana: "4b7b47b5-d50e-41a7-b6aa-28ec37b084e4",
   Bhomra: "60bc421e-a538-461b-a7b5-ba6462cba1df",
   Banglabandha: "a48109ed-b0e0-44d7-b00b-6eff4d76b951",
-  Hili: "dfa39f2e-c3e1-4653-b465-4bf8da92e4c6",
+  Hilli: "dfa39f2e-c3e1-4653-b465-4bf8da92e4c6",
   Burimari: "3198c784-32d2-4ebf-901b-e2758d9c41ea",
   Sonamasjid: "1f49bca9-2891-4f1e-af08-f39fa90f3bcc",
   Teknaf: "b7266c14-7e3f-436a-8fcf-55abdfdbad67",
@@ -154,7 +154,7 @@ async function processExcelSheets(
 
 // Example usage:
 const sheetNames = [
-  "structure-NBR-New-Bldg",
+  // "structure-NBR-New-Bldg",
   // "structure-dc-network",
   // "structure-dch-network",
   // "structure-dch",
@@ -184,11 +184,11 @@ const sheetNames = [
   // "structure-sonamasjid",
   // "structure-teknaf",
   // "structure-Akhawra",
-  // "structure-rohanpur",
-  // "structure-tamabil",
-  // "structure-shonahut",
-  // "structure-Shewla",
-  // "structure-Dhanua",
-  // "structure-bibirbazar",
+  "structure-rohanpur",
+  "structure-tamabil",
+  "structure-shonahut",
+  "structure-Shewla",
+  "structure-Dhanua",
+  "structure-bibirbazar",
 ];
 processExcelSheets(sheetNames);
