@@ -1,0 +1,201 @@
+
+Write a js script
+
+1. read association.csv file
+2. for each row, find the house in the association tree
+3. psql query to find the house has previously inserted current row Data
+4. to check psql "SELECT * FROM locations WHERE type= 'area' AND parent_location_id = "houseNameIdMap[house[currentRowIndex]]" AND name = "area[currentRowIndex]"
+5. if found then skip insertion for current row
+6. else hit GET http://localhost:5001/api/v1/cordinator/association/houseNameIdMap[house[currentRowIndex]]
+7. parse the response and find the High Level Diagram block
+8. insert the new area, building, floor, room in the association tree under High Level Diagram block
+
+9. hit POST http://localhost:5001/api/v1/cordinator/create-association-v2 with the updated association tree
+
+association.csv file format:
+
+include	house	area	            building	                    floor	    room
+Yes	    MCH	    Modular Data Center	Mongla Customs Main Building	1st Floor	Data Center
+Yes	    MCH	    Modular Data Center	Mongla Customs Main Building	1st Floor	Data Center
+Yes	    MCH	    Modular Data Center	Mongla Customs Main Building	1st Floor	Data Center
+Yes	    MCH	    Modular Data Center	Mongla Customs Main Building	1st Floor	Data Center
+
+
+const houseNameIdMap = {
+    "MCH": "mch_uuid"
+}
+
+GET http://localhost:5001/api/v1/cordinator/association/mch_uuid
+{
+    "messageCode": "SUCCESS",
+    "data": {
+        "parentId": "mch_uuid",
+        "children": [
+            {
+                "id": "c8d16a48-0805-43f5-b095-05f0ed3a5e77",
+                "name": "High Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "mch_uuid",
+                "description": "",
+                "children": [
+                ]
+            },
+            {
+                "id": "758dbb84-1965-455f-9bb4-d73ebeb52178",
+                "name": "Low Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+                "description": ""
+            },
+            {
+                "id": "4e6efff4-4dd2-4a5a-b841-70f37baf7b98",
+                "name": "Network Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+                "description": ""
+            }
+        ]
+    }
+}
+
+
+POST http://localhost:5001/api/v1/cordinator/create-association-v2
+{
+    "messageCode": "SUCCESS",
+    "data": {
+        "parentId": "mch_uuid",
+        "children": [
+            {
+                "id": "c8d16a48-0805-43f5-b095-05f0ed3a5e77",
+                "name": "High Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "mch_uuid",
+                "description": "",
+                "children": [
+                    {
+                       
+                        "name": "Modular Data Center",
+                        "type": "area",
+                        "summary": {
+                            "list": [
+                                {
+                                    "label": "",
+                                    "value": ""
+                                }
+                            ],
+                            "type": "",
+                            "title": "",
+                            "description": "dsfsfgggg"
+                        },
+                        "parentId": "c8d16a48-0805-43f5-b095-05f0ed3a5e77",
+                        "description": "dsfsfgggg",
+                        "children": [
+                            {
+                                "name": "Mongla Customs Main Building",
+                                "type": "building",
+                                "summary": {
+                                    "list": [
+                                        {
+                                            "label": "",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "",
+                                    "title": "",
+                                    "description": "test"
+                                },
+                                "description": "test",
+                                "children": [
+                                    {
+                                        "name": "1st Floor",
+                                        "type": "floor",
+                                        "summary": {
+                                            "list": [
+                                                {
+                                                    "label": "",
+                                                    "value": ""
+                                                }
+                                            ],
+                                            "type": "",
+                                            "title": "",
+                                            "description": "dasdas"
+                                        },
+                                        "description": "dasdas",
+                                        "children": [
+                                            {
+                                                "name": "Data Center",
+                                                "type": "room",
+                                                "summary": {
+                                                    "list": [
+                                                        {
+                                                            "label": "",
+                                                            "value": ""
+                                                        }
+                                                    ],
+                                                    "type": "",
+                                                    "title": "",
+                                                    "description": "sdsfsd"
+                                                },
+                                                "description": "sdsfsd"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "758dbb84-1965-455f-9bb4-d73ebeb52178",
+                "name": "Low Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+                "description": ""
+            },
+            {
+                "id": "4e6efff4-4dd2-4a5a-b841-70f37baf7b98",
+                "name": "Network Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+                "description": ""
+            }
+        ]
+    }
+}

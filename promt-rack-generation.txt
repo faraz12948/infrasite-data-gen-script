@@ -1,0 +1,29 @@
+1. read association.csv file
+2. for each row, find the house, rack, rack-position, tag, name, make, type,mode,Mgmt-IP
+3. Get rackId by executing query: SELECT id FROM racks WHERE name = rack[currentRowIndex] AND institute_id::text = houseNameIdMap[house[currentRowIndex]];
+4. Get equipmentId by executing query: SELECT e.id, m.name as make, e.type FROM equipments e JOIN make m ON m.id::text = e.make::mch_uuid JOIN asset_type at 
+ON at.id::text = e.type::text WHERE LOWER(e.model) = model[currentRowIndex].toLowerCase();
+5. hit /equipment-rack-mapping api
+6. 5 sec sleep after each api hit
+const houseNameIdMap = {
+  MCH: "911208bf-9901-438a-bf91-862d3dffb463",
+};
+
+
+POST http://localhost:5001/api/v1/equipment-rack-mapping
+
+{
+    "equipments": [
+        {
+            "id": equipmentId,
+            "tag": tag[currentRowIndex],
+            "rack_position": rack-position[currentRowIndex],
+            "equipment_name":name[currentRowIndex],
+            "extra_device_specification":"{
+
+                "ip_management_ip":Mgmt-IP[currentRowIndex]
+            }"
+        }
+    ],
+    "parent_rack_id": rackId
+}

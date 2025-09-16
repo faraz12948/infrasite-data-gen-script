@@ -1,0 +1,489 @@
+include,house,area,building,floor,room,rack,rack-make,rack-u-count,rack-model,tag,rack-position,name,type,make,model,Mgmt IP,port,link
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2444LHDN,16,MCH_WAN_RT-01,router,CISCO,ISR4431-DNA,10.60.58.41,,-
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2617L49K,18,MCH_WAN_RT-02,router,CISCO,ISR4431-DNA,10.60.58.42,,-
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,JMX2234Y025,20,MCH_FW-01,firewall,CISCO,FPR-2120-K9,10.60.58.12,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,JMX2544X0NT,22,MCH_FW-02,firewall,CISCO,FPR-2120-K9,10.60.58.13,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2443L017,24,MCH_WAN_CSW-01,switch,CISCO,C9300-24T,10.60.58.28,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2618Y09W,26,MCH_WAN_CSW-02,switch,CISCO,C9300-24T,10.60.58.29,,
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,PortF1,MCH-CORE-SW-01 Te1/0/36
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,PortF2,MCH-CORE-SW-02 Te2/0/36
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,LAG.958,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor(=,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,LAG.956,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,Port 1,MCH-SERVER-FARM-SW Port-22
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,Port1.596,N/A
+Yes,MCHw,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,Port 2,MCH-WAN-SW
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,Port 8,MCH-INT-FW-02
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45007K3D33JK6D,32,MCH-INT-FW-02,Firewall,CISCO,XGS4500,10.60.63.64,MGMT,MCH-CCTV-SW
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,PortF1,MCH-CORE-SW-01 Te1/0/35
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,PortF2,MCH-CORE-SW-02 Te2/0/35
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,LAG.958,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,LAG.956,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,Port 1,MCH-SERVER-FARM-SW Port-21
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,Port1.596,NA
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,Port 2,MCH-WAN-SW
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,Port 8,MCH-INT-FW-02
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,X45009WXCCW6VD3,34,MCH-INT-FW-01,Firewall,CISCO,XGS4500,10.60.63.63,MGMT,MCH-CCTV-SW
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR 4431-DNA,10.60.63.62,Gi0/0/0.1401,Connected to ISP-2
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR4431-DNA,10.60.63.62,Gi0/0/1,MCH-INT-RTR-01 Gi0/0/1
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR4431-DNA,10.60.63.62,Gi0/1/0,MCH-CORE-SW-01 Te1/0/34
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR4431-DNA,10.60.63.62,Gi0/1/1,MCH-CORE-SW-02 Te2/0/34
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR4431-DNA,10.60.63.62,Port channel1.956,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR4431-DNA,10.60.63.62,Gi0,Management
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR4431-DNA,10.60.63.62,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUDL,36,MCH-INT-RTR-02,Router,CISCO,ISR4431-DNA,10.60.63.62,,
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,Gi0/0/0,ISP - 1
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,Gi0/0/1,MCH Internet Router 02
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,Gi0/1/0,MCH Core Switch 1
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,Gi0/1/1,MCH Core Switch 2
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,Port channel1.956,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,Gi0,Management
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FGL2630LUGL,38,MCH-INT-RTR-01,Router,CISCO,ISR4431-DNA,10.60.63.61,,
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/1,MCH-RACK-01-SW-01 Interface Te1/0/50
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/2,MCH-RACK-01-SW-02 Interface Te1/0/50
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/3,MCH-RACK-02-SW-01 Interface Te1/0/50
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/4,MCH-RACK-03-SW-01 Interface Te1/0/50
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/5,MCH-RACK-04-SW-01 Interface Te1/0/50
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/6,MCH-RACK-05-SW-01 Interface Te1/0/50
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/7,MCH-RACK-06-SW-01 Interface Gi1/0/10
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/8,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/9,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/10,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/11,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/12,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/13,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/14,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/15,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/16,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/17,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/18,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/19,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/20,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/21,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/22,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/23,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/24,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/25,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/26,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/27,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/28,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/29,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/30,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/31,MCH-SERVER-SW
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/32,MCH-CCTV-SW
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/33,MCH-INT-RTR-01
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/34,MCH-INT-RTR-02
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/35,MCH-INT-FW-01
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/36,MCH-INT-FW-02
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/37,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/38,MCH-CORE-SW-01 Interface Te0/38
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/39,MCH-CORE-SW-01 Interface Te0/39
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y17B,40,MCH-Core-SW-02,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/40,MCH-CORE-SW-01 Interface Te0/40
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/1,MCH-RACK-01-SW-01 Interface Te1/0/49
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/2,MCH-RACK-01-SW-02 Interface Te1/0/49
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/3,MCH-RACK-02-SW-01 Interface Te1/0/49
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/4,MCH-RACK-03-SW-01 Interface Te1/0/49
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/5,MCH-RACK-04-SW-01 Interface Te1/0/25
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/6,MCH-RACK-05-SW-01 Interface Te1/0/49
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/7,MCH-RACK-06-SW-01 Interface Gi1/0/9
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/8,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/9,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/10,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/11,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/12,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/13,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/14,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/15,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/16,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/17,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/18,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/19,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/20,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/21,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/22,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/23,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/24,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/25,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/26,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/27,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/28,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/29,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/30,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/31,MCH-SERVER-SW
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/32,MCH-CCTV-SW
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/33,MCH-INT-RTR-01
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/34,MCH-INT-RTR-02
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/35,MCH-INT-FW-01
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/36,MCH-INT-FW-02
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/37,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/38,MCH-CORE-SW-02 Interface Te0/38
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/39,MCH-CORE-SW-02 Interface Te0/39
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-2,VARICOM,42,X7S-6242-RGB-B,FOC2551Y3DS,42,MCH-Core-SW-01,Switch,CISCO,C9500-40X-A,10.60.63.1,Te1/0/40,MCH-CORE-SW-02 Interface Te0/40
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,WZP25370UM5,20-21,AD Server,Server,CISCO,UCSC-C240-M5SX,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,WZP25370UMA,22-23,NMS Server,Server,CISCO,UCSC-C240-M5SX,,,
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/1,NOC PC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/2,NOC PC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/3,NOC PC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/4,NOC PC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/5,NOC PC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/6,NOC PC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/7,CC Camera
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/8,CC Camera
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/9,CC Camera
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/10,CC Camera
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/11,CC Camera
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/12,CC Camera
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/13,NVR
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/14,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/15,Access Control
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/16,Access Control
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/17,Access Control
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/18,Access Control
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/19,MCH-INT-RTR-01 Gi0
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/20,MCH-INT-RTR-02 Gi0
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/21,MCH-INT-FW-01 MGMT
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/22,MCH-INT-FW-02 MGMT
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/23,Core-Switch
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FCW2142A2VG,27,MCH-CCTV-SW,Switch,CISCO,C2960-24TC,10.60.63.70,Gi0/24,Core-Switch
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/1,AD-Server-CIMC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/2,NMS-Server-CIMC
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/3,AD-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/4,AD-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/5,AD-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/6,NMS-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/7,NMS-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/8,NMS-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/9,NMS-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/10,NMS-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/11,NMS-Server
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/12,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/13,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/14,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/15,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/16,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/17,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/18,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/19,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/20,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/21,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/22,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/23,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Fa0/24,N/A
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Gi0/1,Core-Switch
+Yes,MCH,Modular Data Center,Mongla Customs Main Building,1st Floor,Data Center,MDC Rack-1,VARICOM,42,X7S-6242-RGB-B,FOC1850W2YJ,30,MCH-SERVER-SW,Switch,CISCO,C2960-24TC,10.60.63.69,Gi0/2,Core-Switch
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/1,Joint Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/2,Joint Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/3,Md. Mahfuz Ahmed (JC)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/4,A K M Khairul Bashar (DC)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/5,Deputy Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/6,Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/7,Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/8,Mohammad Neazur Rahman (Comm)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/9,Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/10,Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/11,Md. Kamruzzaman Howlader (AP)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/12,Asst. Programmer
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/13,Asst. Programmer
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/14,Asst. Programmer
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/15,Asst. Programmer
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/16,Md. Kamruzzaman Howlader (AP)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/17,Asst. Programmer
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/18,Old Data Center
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/19,Old Data Center
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/20,Old Data Center
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/21,Joint Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/22,Mohibbur Rahman Bhuiyan (JC)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/23,Asst. Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/24,Asst. Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/25,Jiahur Rahman (PA to Comm.)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/26,PA to Commissioner
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/27,Conference Room
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/28,Conference Room
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/29,Bond Branch
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/30,Bond Branch
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/31,Roman Ahmed (UDA)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/32,Public Administration
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/33,Public Administration
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/34,Md. Amdad Hosain (Operator)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/35,ARO
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/36,ARO
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/37,Md. Mamun Sheikh (ARO)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/38,Apurba Krishno Pramanik (Researcher)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/39,RO
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/40,RO
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/41,PA to JC
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/42,Room
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/43,Room
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/44,Md.Mijanur Rahman (DC)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/45,DC
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/46,DC
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/47,Desspass
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Gi1/0/48,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Te1/1/1,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Te1/1/2,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Te1/1/3,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200LHW,7,MCH-RACK-01-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.71,Te1/1/4,N/A
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/1,Desspass
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/2,Desspass
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/3,Administration
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/4,Administration
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/5,Sahan Mondol (LDA)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/6,Nazmul Ahsan (RO)
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/7,RO
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/8,RO
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/9,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/10,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/11,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/12,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/13,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/14,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/15,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/16,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/17,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/18,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/19,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/20,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/21,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/22,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/23,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/24,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/25,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/26,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/27,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/28,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/29,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/30,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/31,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/32,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/33,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/34,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/35,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/36,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/37,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/38,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/39,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/40,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/41,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/42,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/43,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/44,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/45,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/46,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/47,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Gi1/0/48,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Te1/1/1,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Te1/1/2,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Te1/1/3,N/A
+Yes,MCH,Customs Campus Area,Mongla Customs Main Building,1st Floor,N/A,Rack-01,VIVANCO,15,VSA.6615.01.10E,JAE26200N7C,13,MCH-RACK-01-ACC-SW-02,Switch,CISCO,C9200-48T-E,10.60.63.72,Te1/1/4,N/A
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/1,ARO
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/2,ARO
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/3,LDA
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/4,LDA
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/5,LDA
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/6,LDA
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/7,ARO
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/8,ARO
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/9,ARO
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/10,ARO
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/11,Access Point Ground Floor
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/12,RO
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/13,"RO ,Auction"
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/14,"RO, Auction"
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/15,"RO, Auction"
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/16,"RO, EPZ"
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/17,"RO, EPZ"
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/18,"RO, EPZ"
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/19,"RO, EPZ"
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/20,Auction Branch
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/21,Auction Branch
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/22,UDA
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/23,UDA
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/24,Auction Branch
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/25,UDA
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/26,Access Point 1st Floor
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/27,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/28,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/29,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/30,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/31,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/32,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/33,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/34,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/35,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/36,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/37,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/38,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/39,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/40,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/41,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/42,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/43,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/44,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/45,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/46,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/47,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Gi1/0/48,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Te1/1/1,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Te1/1/2,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Te1/1/3,N/A
+Yes,MCH,Outside Campus Area,EPZ Gate,Ground Floor,N/A,Rack-02,VIVANCO,6,VSA.6606.01.10E,JAE26200LDZ,4,MCH-RACK-02-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.73,Te1/1/4,N/A
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,7,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/1,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,7,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/2,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,7,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/3,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,7,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/4,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,7,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/5,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,7,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/6,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/7,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/8,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/9,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/10,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/11,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/12,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/13,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/14,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/15,Cumputer Operator
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/16,Cumputer Operator
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/17,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/18,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/19,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/20,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/21,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/22,RO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/23,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/24,UDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/25,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/26,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/27,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/28,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/29,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/30,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/31,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/32,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/33,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/34,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/35,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/36,UDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/37,N/A
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/38,UDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/39,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/40,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/41,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/42,ARO
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/43,UDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/44,UDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/45,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/46,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/47,LDA
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Gi1/0/48,N/A
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Te1/1/1,N/A
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Te1/1/2,N/A
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Te1/1/3,N/A
+Yes,MCH,Outside Campus Area,Traffic Building,Ground Floor,N/A,Rack-03,VIVANCO,15,VSA.6615.01.10E,JAE26200SSD,13,MCH-RACK-03-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.74,Te1/1/4,N/A
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/1,RO
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/2,RO
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/3,RO
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/4,RO
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/5,RO
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/6,RO
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/7,LDA
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/8,LDA
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/9,IMPORT
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/10,IMPORT
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/11,IMPORT
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/12,Sonali Bank Ltd Mongla
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/13,Sonali Bank Ltd Mongla
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/14,License Branch
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/15,Toukir Ahamed (DS
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/16,Treasury Branch
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/17,UDA
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/18,DS
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/19,Treasury Branch
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/20,LDA
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/21,LDA
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/22,GL Section
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/23,N/A
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Gi1/0/24,Stenographer
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Te1/1/1,N/A
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Te1/1/2,N/A
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Te1/1/3,N/A
+Yes,MCH,Outside Campus Area,Sonali Building,Ground Floor,N/A,Rack-04,VIVANCO,15,VSA.6615.01.10E,JAE26292MZL,8,MCH-RACK-04-ACC-SW-01,Switch,CISCO,C9200-24T-E,10.60.63.75,Te1/1/4,N/A
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/1,JC
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/2,JC
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/3,DC
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/4,DC
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/5,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/6,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/7,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/8,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/9,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/10,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/11,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/12,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/13,LDA
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/14,LDA
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/15,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/16,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/17,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/18,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/19,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/20,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/21,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/22,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/23,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/24,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/25,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/26,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/27,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/28,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/29,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/30,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/31,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/32,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/33,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/34,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/35,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/36,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/37,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/38,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/39,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/40,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/41,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/42,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/43,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/44,ARO
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/45,N/A
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/46,N/A
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/47,N/A
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Gi1/0/48,N/A
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Te1/1/1,N/A
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Te1/1/2,N/A
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Te1/1/3,N/A
+Yes,MCH,Outside Campus Area,Jetty Exam Building,Ground Floor,N/A,Rack-05,VIVANCO,15,VSA.6615.01.10E,JAE26200P06,12,MCH-RACK-05-ACC-SW-01,Switch,CISCO,C9200-48T-E,10.60.63.76,Te1/1/4,N/A
+,,,,,,,,,,,,,,,,,,
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/1,ARO
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/2,ARO
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/3,ARO
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/4,ARO
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/5,N/A
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/6,N/A
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/7,N/A
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/8,N/A
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/9,N/A
+Yes,MCH,Outside Campus Area,Jetty Gate,Ground Floor,N/A,Rack-06,VIVANCO,15,VSA.6615.01.10E,PSZ262119LA,10,MCH-RACK-06-ACC-SW-01,Switch,CISCO,C1000-8FP-E-2G-L,10.60.63.77,Gi1/0/10,N/A

@@ -1,0 +1,261 @@
+Write a js script for inserting rack
+
+1. read association.csv file
+2. for each row, find the house, rack, floor, room, rack-u-count, rack-make, rack-model
+3. GET http://localhost:5001/api/v1/cordinator/association/houseNameIdMap[house[currentRowIndex]]
+4. Find the smallest child id usually the smallest child would be type floor or room:
+if room exit:
+ then get id of room[currentRowIndex]
+ parentLocationId = id
+else:
+ floor[currentRowIndex]
+  parentLocationId = id
+5. check rack[currentRowIndex] already exit on db:
+    psql: SELECT * FROM racks WHERE name = rack[currentRowIndex] AND parent_location_id = houseNameIdMap[house[currentRowIndex]]
+6. if true then continue.
+7. else hit rack insert api.
+
+
+const houseNameIdMap = {
+    MCH: a3467b8c-b25b-4fab-b8e4-364d82c6999e
+}
+
+
+GET http://localhost:5001/api/v1/cordinator/association/a3467b8c-b25b-4fab-b8e4-364d82c6999e
+{
+    "messageCode": "SUCCESS",
+    "data": {
+        "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+        "children": [
+            {
+                "id": "c8d16a48-0805-43f5-b095-05f0ed3a5e77",
+                "name": "High Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+                "description": "",
+                "children": [
+                    {
+                        "id": "aa3b0bce-ec52-449d-8fd4-c0b4740a97c0",
+                        "name": "test",
+                        "type": "area",
+                        "summary": {
+                            "list": [
+                                {
+                                    "label": "",
+                                    "value": ""
+                                }
+                            ],
+                            "type": "",
+                            "title": "",
+                            "description": "dsfsfgggg"
+                        },
+                        "parentId": "c8d16a48-0805-43f5-b095-05f0ed3a5e77",
+                        "description": "dsfsfgggg",
+                        "children": [
+                            {
+                                "id": "062ebe8b-85fd-4e8b-be9f-bb52abb87f4e",
+                                "name": "test",
+                                "type": "building",
+                                "summary": {
+                                    "list": [
+                                        {
+                                            "label": "",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "",
+                                    "title": "",
+                                    "description": "test"
+                                },
+                                "parentId": "aa3b0bce-ec52-449d-8fd4-c0b4740a97c0",
+                                "description": "test",
+                                "children": [
+                                    {
+                                        "id": "700b3110-26a4-40e6-ba4d-5fb6fc2b5d91",
+                                        "name": "test",
+                                        "type": "floor",
+                                        "summary": {
+                                            "list": [
+                                                {
+                                                    "label": "",
+                                                    "value": ""
+                                                }
+                                            ],
+                                            "type": "",
+                                            "title": "",
+                                            "description": "dasdas"
+                                        },
+                                        "parentId": "062ebe8b-85fd-4e8b-be9f-bb52abb87f4e",
+                                        "description": "dasdas",
+                                        "children": [
+                                            {
+                                                "id": "3cb3ac20-cc7f-4bf4-ae20-33564b6a3b7f",
+                                                "name": "test",
+                                                "type": "room",
+                                                "summary": {
+                                                    "list": [
+                                                        {
+                                                            "label": "",
+                                                            "value": ""
+                                                        }
+                                                    ],
+                                                    "type": "",
+                                                    "title": "",
+                                                    "description": "sdsfsd"
+                                                },
+                                                "parentId": "700b3110-26a4-40e6-ba4d-5fb6fc2b5d91",
+                                                "description": "sdsfsd"
+                                            },
+                                            {
+                                                "id": "e8576af2-9c9b-4180-b9c9-b32ea5096d79",
+                                                "name": "test prime",
+                                                "type": "room",
+                                                "summary": {
+                                                    "list": [
+                                                        {
+                                                            "label": "",
+                                                            "value": ""
+                                                        }
+                                                    ],
+                                                    "type": "",
+                                                    "title": "",
+                                                    "description": "dfsdf"
+                                                },
+                                                "parentId": "700b3110-26a4-40e6-ba4d-5fb6fc2b5d91",
+                                                "description": "dfsdf"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "5a638976-17a7-4cb6-b33f-746280390c6b",
+                        "name": "test 1",
+                        "type": "area",
+                        "summary": {
+                            "list": [
+                                {
+                                    "label": "",
+                                    "value": ""
+                                }
+                            ],
+                            "type": "",
+                            "title": "",
+                            "description": "efwefw"
+                        },
+                        "parentId": "c8d16a48-0805-43f5-b095-05f0ed3a5e77",
+                        "description": "efwefw",
+                        "children": [
+                            {
+                                "id": "48885caf-687b-4ecd-a292-d02fd579a937",
+                                "name": "test 1",
+                                "type": "building",
+                                "summary": {
+                                    "list": [
+                                        {
+                                            "label": "",
+                                            "value": ""
+                                        }
+                                    ],
+                                    "type": "",
+                                    "title": "",
+                                    "description": "sfsfsdf"
+                                },
+                                "parentId": "5a638976-17a7-4cb6-b33f-746280390c6b",
+                                "description": "sfsfsdf",
+                                "children": [
+                                    {
+                                        "id": "7b713134-66d9-420e-8048-bc539d1c04d1",
+                                        "name": "test 1",
+                                        "type": "floor",
+                                        "summary": {
+                                            "list": [
+                                                {
+                                                    "label": "",
+                                                    "value": ""
+                                                }
+                                            ],
+                                            "type": "",
+                                            "title": "",
+                                            "description": "fsfsf"
+                                        },
+                                        "parentId": "48885caf-687b-4ecd-a292-d02fd579a937",
+                                        "description": "fsfsf",
+                                        "children": [
+                                            {
+                                                "id": "bced8a6d-e3e6-4543-9f91-7c1d3957877d",
+                                                "name": "test 1",
+                                                "type": "room",
+                                                "summary": {
+                                                    "list": [
+                                                        {
+                                                            "label": "",
+                                                            "value": ""
+                                                        }
+                                                    ],
+                                                    "type": "",
+                                                    "title": "",
+                                                    "description": "fsdfsdf"
+                                                },
+                                                "parentId": "7b713134-66d9-420e-8048-bc539d1c04d1",
+                                                "description": "fsdfsdf"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "758dbb84-1965-455f-9bb4-d73ebeb52178",
+                "name": "Low Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+                "description": ""
+            },
+            {
+                "id": "4e6efff4-4dd2-4a5a-b841-70f37baf7b98",
+                "name": "Network Level Diagram",
+                "type": "diagram",
+                "summary": {
+                    "list": [],
+                    "type": "house",
+                    "title": "test",
+                    "description": ""
+                },
+                "parentId": "a3467b8c-b25b-4fab-b8e4-364d82c6999e",
+                "description": ""
+            }
+        ]
+    }
+}
+
+
+
+POST http://localhost:5001/api/v1/rack
+
+payload:
+{
+    "name":rack[currentRowIndex],
+    "make":rack-make[currentRowIndex],
+    "u_count":Number(rack-u-count[currentRowIndex]),
+    "model":rack-model[currentRowIndex],
+    "parent_location_id": parentLocationId = id
+
+}
