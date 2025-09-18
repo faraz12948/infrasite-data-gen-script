@@ -6,7 +6,7 @@ const axios = require("axios");
 const client = new Client({
   user: "root",
   host: "localhost",
-  database: "ca_mgt_v2",
+  database: "ca_mgt_v3",
   password: "ca-mgt",
   port: 5432,
 });
@@ -46,24 +46,22 @@ const houseNameIdMap = {
 
 // Helper: find room/floor ID
 function findParentId(associationTree, floorName, roomName) {
-  let parentId = null;
-
+  let roomId = null;
+  let floorId = null;
   function traverse(node) {
     if (node.type === "room" && node.name === roomName) {
-      parentId = node.id;
+      roomId = node.id;
       return;
     }
-    if (node.type === "floor" && node.name === floorName && !parentId) {
-      parentId = node.id;
-      return;
+    if (node.type === "floor" && node.name === floorName) {
+      floorId = node.id;
     }
     if (node.children) {
       node.children.forEach(traverse);
     }
   }
-
   traverse(associationTree);
-  return parentId;
+  return roomId || floorId;
 }
 
 // Main
@@ -154,36 +152,37 @@ async function processExcelSheets(
 
 // Example usage:
 const sheetNames = [
-  // "structure-NBR-New-Bldg",
-  // "structure-dc-network",
-  // "structure-dch-network",
-  // "structure-dch",
-  // "structure-mch",
-  // "structure-mch_moduler",
-  // "structure-dch-summary",
-  // "structure-dch_moduler",
-  // "structure-nbr-dr-network",
-  // "structure-cch_moduler",
-  // "structure-cch",
-  // "structure-icd_moduler",
-  // "structure-bch",
-  // "structure-bch_moduler",
-  // "structure-pch",
-  // "structure-pch_moduler",
-  // "structure-cchbond",
-  // "structure-dhakabond",
-  // "structure-adamjee",
-  // "structure-UEPZ",
-  // "structure-dhaka-epz",
-  // "structure-cepz",
-  // "structure-darshana",
-  // "structure-bhomra",
-  // "structure-banglabandha",
-  // "structure-hilli",
-  // "structure-burimari",
-  // "structure-sonamasjid",
-  // "structure-teknaf",
-  // "structure-Akhawra",
+  "structure-NBR-New-Bldg",
+  "structure-dc-network",
+  "structure-dc_system",
+  "structure-dch-network",
+  "structure-dch",
+  "structure-mch",
+  "structure-mch_moduler",
+  "structure-dch-summary",
+  "structure-dch_moduler",
+  "structure-nbr-dr-network",
+  "structure-cch_moduler",
+  "structure-cch",
+  "structure-icd_moduler",
+  "structure-bch",
+  "structure-bch_moduler",
+  "structure-pch",
+  "structure-pch_moduler",
+  "structure-cchbond",
+  "structure-dhakabond",
+  "structure-adamjee",
+  "structure-UEPZ",
+  "structure-dhaka-epz",
+  "structure-cepz",
+  "structure-darshana",
+  "structure-bhomra",
+  "structure-banglabandha",
+  "structure-hilli",
+  "structure-burimari",
+  "structure-sonamasjid",
+  "structure-teknaf",
+  "structure-Akhawra",
   "structure-rohanpur",
   "structure-tamabil",
   "structure-shonahut",

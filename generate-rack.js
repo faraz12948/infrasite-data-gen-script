@@ -6,7 +6,7 @@ const axios = require("axios");
 const client = new Client({
   user: "root",
   host: "localhost",
-  database: "ca_mgt_v2",
+  database: "ca_mgt_v3",
   password: "ca-mgt",
   port: 5432,
 });
@@ -160,6 +160,7 @@ async function processExcelSheets(
 const sheetNames = [
   // "structure-NBR-New-Bldg",
   // "structure-dc-network",
+      // "structure-dc_system",
   // "structure-dch-network",
   // "structure-dch", skipping
   // "structure-mch",

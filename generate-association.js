@@ -1,6 +1,5 @@
 // syncAssociations.js
 // Usage: set env vars PG_CONNECTION_STRING and BASE_URL then run: node syncAssociations.js
-
 const XLSX = require("xlsx");
 const path = require("path");
 const { Client } = require("pg");
@@ -11,9 +10,8 @@ const EXCEL_PATH = path.join(__dirname, "NBR__logical-connectivity-data.xlsx");
 // === Configure these (or set via env) ===
 const pgConnectionString =
   process.env.PG_CONNECTION_STRING ||
-  "postgresql://root:ca-mgt@localhost:5432/insert-institutions";
+  "postgresql://root:ca-mgt@localhost:5432/ca_mgt_v3";
 const baseUrl = process.env.BASE_URL || "http://localhost:5001";
-
 const houseNameIdMap = {
   DR: "9745ec1d-7cc3-444a-b2f9-0196de9330ce",
   DC: "cf02adf7-0408-40a7-a4cb-0de18652dbc9",
@@ -46,16 +44,13 @@ const houseNameIdMap = {
   Dhanua: "6ee7c4fd-f714-48d2-b77e-f6434f37fc5d",
   "Bibir Bazar": "3298f3b1-71c2-408e-8a7b-cb004d99bf16",
 };
-
 // === Postgres client ===
 const pgClient = new Client({ connectionString: pgConnectionString });
-
 // Helper: read Excel sheet into array of rows
 function readSheet(sheet, workbook) {
   const worksheet = workbook.Sheets[sheet];
   if (!worksheet) return [];
   const rows = XLSX.utils.sheet_to_json(worksheet);
-  // Trim all fields
   return rows.map((row) => {
     Object.keys(row).forEach(
       (k) => (row[k] = row[k] && row[k].toString().trim())
@@ -63,15 +58,7 @@ function readSheet(sheet, workbook) {
     return row;
   });
 }
-
-// Helper: Check if area exists in DB
-async function areaExists(parentLocationId, areaName) {
-  const sql = `SELECT 1 FROM locations WHERE type = 'area' AND parent_location_id = $1 AND name = $2 LIMIT 1`;
-  const res = await pgClient.query(sql, [parentLocationId, areaName]);
-  return res.rowCount > 0;
-}
-
-// Helper: Get association tree for houseId
+// Helper: GET association tree for houseId
 async function getAssociationTree(houseId) {
   const url = `${baseUrl}/api/v1/cordinator/association/${encodeURIComponent(
     houseId
@@ -80,25 +67,21 @@ async function getAssociationTree(houseId) {
   if (resp && resp.data) return resp.data.data;
   throw new Error(`Invalid response from GET ${url}`);
 }
-
 // Helper: POST updated association tree
 async function postAssociationTree(treePayload) {
   const url = `${baseUrl}/api/v1/cordinator/create-association-v2`;
   const resp = await axios.post(url, treePayload);
   return resp.data;
 }
-
-// Find or create High Level Diagram node in the tree object, return reference to it
+// Ensure "High Level Diagram" exists
 function findOrCreateHighLevelDiagram(tree) {
   if (!tree.children) tree.children = [];
-
   let highNode = tree.children.find(
     (c) => c.name === "High Level Diagram" && c.type === "diagram"
   );
   if (!highNode) {
-    // create default high level node
     highNode = {
-      id: null, // server may generate id or accept null; we keep null to indicate new node (depends on API)
+      id: null,
       name: "High Level Diagram",
       type: "diagram",
       summary: { list: [], type: "house", title: "", description: "" },
@@ -106,112 +89,47 @@ function findOrCreateHighLevelDiagram(tree) {
       description: "",
       children: [],
     };
-    tree.children.unshift(highNode); // add at beginning
+    tree.children.unshift(highNode);
   } else if (!highNode.children) {
     highNode.children = [];
   }
-
   return highNode;
 }
-
-// Check if an area with the same name already exists under a diagram node (by name)
-function hasArea(diagramNode, areaName) {
-  return (diagramNode.children || []).some(
-    (c) => c.type === "area" && c.name === areaName
-  );
-}
-
-// Helper: check if value is invalid (empty, N/A, null etc.)
+// Helper to check invalid values
 function isInvalid(value) {
   if (!value) return true;
   const badValues = ["n/a", "na", "null", "-"];
   return badValues.includes(value.trim().toLowerCase());
 }
-
-// Build nested structure dynamically, skipping invalid levels + children
-function buildNestedStructure(areaName, buildingName, floorName, roomName) {
-  // Area is mandatory: if invalid -> return null
-  if (isInvalid(areaName)) return null;
-
-  const areaNode = {
-    name: areaName,
-    type: "area",
-    summary: {
-      list: [{ label: "", value: "" }],
-      type: "",
-      title: "",
-      description: "",
-    },
-    description: "",
-    children: [],
-  };
-
-  // Building
-  if (!isInvalid(buildingName)) {
-    const buildingNode = {
-      name: buildingName,
-      type: "building",
-      summary: {
-        list: [{ label: "", value: "" }],
-        type: "",
-        title: "",
-        description: "",
-      },
+// Find or create node under parent
+function findOrCreateNode(parent, type, name) {
+  if (!parent.children) parent.children = [];
+  let node = parent.children.find((c) => c.type === type && c.name === name);
+  if (!node) {
+    node = {
+      id: null,
+      name,
+      type,
+      summary: { list: [], type: "", title: "", description: "" },
       description: "",
       children: [],
+      parentId: parent.id || parent.parentId || null,
     };
-
-    // Floor
-    if (!isInvalid(floorName)) {
-      const floorNode = {
-        name: floorName,
-        type: "floor",
-        summary: {
-          list: [{ label: "", value: "" }],
-          type: "",
-          title: "",
-          description: "",
-        },
-        description: "",
-        children: [],
-      };
-
-      // Room
-      if (!isInvalid(roomName)) {
-        const roomNode = {
-          name: roomName,
-          type: "room",
-          summary: {
-            list: [{ label: "", value: "" }],
-            type: "",
-            title: "",
-            description: "",
-          },
-          description: "",
-        };
-        floorNode.children.push(roomNode);
-      }
-
-      buildingNode.children.push(floorNode);
-    }
-
-    areaNode.children.push(buildingNode);
+    parent.children.push(node);
+  } else if (!node.children) {
+    node.children = []; // :white_check_mark: ensure children array exists
   }
-
-  return areaNode;
+  return node;
 }
-
 // Main flow
-
-// Main flow for Excel sheets
 (async function main() {
   try {
     console.log("Connecting to Postgres...");
     await pgClient.connect();
-
     const sheetNames = [
-      // "structure-NBR-New-Bldg",
       // "structure-dc-network",
+      // "structure-dc_system",
+      // "structure-NBR-New-Bldg",
       // "structure-dch-network",
       // "structure-dch",
       // "structure-mch",
@@ -232,14 +150,14 @@ function buildNestedStructure(areaName, buildingName, floorName, roomName) {
       // "structure-UEPZ",
       // "structure-dhaka-epz",
       // "structure-cepz",
-      // "structure-darshana",
-      // "structure-bhomra",
-      // "structure-banglabandha",
-      // "structure-hilli",
-      // "structure-burimari",
-      // "structure-sonamasjid",
-      // "structure-teknaf",
-      // "structure-Akhawra",
+      "structure-darshana",
+      "structure-bhomra",
+      "structure-banglabandha",
+      "structure-hilli",
+      "structure-burimari",
+      "structure-sonamasjid",
+      "structure-teknaf",
+      "structure-Akhawra",
       "structure-rohanpur",
       "structure-tamabil",
       "structure-shonahut",
@@ -248,15 +166,12 @@ function buildNestedStructure(areaName, buildingName, floorName, roomName) {
       "structure-bibirbazar",
     ];
     const workbook = XLSX.readFile(EXCEL_PATH);
-
     for (const sheetName of sheetNames) {
       console.log(`Reading sheet: ${sheetName}`);
       const rows = readSheet(sheetName, workbook);
       console.log(`Found ${rows.length} rows in ${sheetName}.`);
-
       for (let i = 0; i < rows.length; i++) {
         const row = rows[i];
-        // expected columns: include, house, area, building, floor, room
         const include = (row.include || "").toLowerCase();
         if (include !== "yes") {
           console.log(
@@ -264,7 +179,6 @@ function buildNestedStructure(areaName, buildingName, floorName, roomName) {
           );
           continue;
         }
-
         const houseKey = row.house;
         if (!houseKey) {
           console.warn(
@@ -272,7 +186,6 @@ function buildNestedStructure(areaName, buildingName, floorName, roomName) {
           );
           continue;
         }
-
         const houseId = houseNameIdMap[houseKey];
         if (!houseId) {
           console.warn(
@@ -280,43 +193,18 @@ function buildNestedStructure(areaName, buildingName, floorName, roomName) {
           );
           continue;
         }
-
         const areaName = row.area;
         const buildingName = row.building;
         const floorName = row.floor;
         const roomName = row.room;
-
-        if (!areaName || !buildingName || !floorName || !roomName) {
-          console.warn(
-            `Sheet ${sheetName} Row ${i}: missing one of area/building/floor/room -> skipping`
-          );
+        if (isInvalid(areaName)) {
+          console.warn(`Sheet ${sheetName} Row ${i}: invalid area -> skipping`);
           continue;
         }
-
         console.log(
           `Sheet ${sheetName} Row ${i}: processing house=${houseKey}(${houseId}), area="${areaName}"`
         );
-
-        // Step 3-5: check psql if area already exists under parent = houseId
-        let exists = false;
-        try {
-          exists = await areaExists(houseId, areaName);
-        } catch (err) {
-          console.error(
-            `Sheet ${sheetName} Row ${i}: Postgres check failed:`,
-            err.message
-          );
-          continue;
-        }
-
-        if (exists) {
-          console.log(
-            `Sheet ${sheetName} Row ${i}: area "${areaName}" found in DB under parent ${houseId} -> skipping insertion`
-          );
-          continue;
-        }
-
-        // Step 6: GET association tree for house
+        // Always fetch the full tree
         let tree;
         try {
           tree = await getAssociationTree(houseId);
@@ -327,38 +215,40 @@ function buildNestedStructure(areaName, buildingName, floorName, roomName) {
           );
           continue;
         }
-
-        // Step 7: find High Level Diagram block (or create it)
+        // Ensure high-level diagram exists
         const highNode = findOrCreateHighLevelDiagram(tree);
-
-        // Step 8: insert area->building->floor->room under highNode
-        if (hasArea(highNode, areaName)) {
-          console.log(
-            `Sheet ${sheetName} Row ${i}: area "${areaName}" already exists under High Level Diagram -> skipping add`
-          );
-          continue;
+        // Traverse down and create missing nodes
+        const areaNode = findOrCreateNode(highNode, "area", areaName);
+        let buildingNode = null;
+        if (!isInvalid(buildingName)) {
+          buildingNode = findOrCreateNode(areaNode, "building", buildingName);
         }
-
-        const areaNode = buildNestedStructure(
-          areaName,
-          buildingName,
-          floorName,
-          roomName
-        );
-        if (highNode.id) areaNode.parentId = highNode.id;
-
-        highNode.children.push(areaNode);
-
-        // Step 9: POST updated association tree
-        const payload = {
-          parentId: tree.parentId,
-          children: tree.children,
-        };
-
+        let floorNode = null;
+        if (buildingNode && !isInvalid(floorName)) {
+          floorNode = findOrCreateNode(buildingNode, "floor", floorName);
+        }
+        if (floorNode && !isInvalid(roomName)) {
+          if (!floorNode.children) floorNode.children = []; // :white_check_mark: fix
+          const roomExists = floorNode.children.some(
+            (c) => c.type === "room" && c.name === roomName
+          );
+          if (!roomExists) {
+            const roomNode = {
+              id: null,
+              name: roomName,
+              type: "room",
+              summary: { list: [], type: "", title: "", description: "" },
+              description: "",
+              parentId: floorNode.id || floorNode.parentId || null,
+            };
+            floorNode.children.push(roomNode);
+          }
+        }
+        // POST updated tree
         try {
           const postResp = await postAssociationTree({
-            parentId: payload.parentId,
-            children: payload.children,
+            parentId: tree.parentId,
+            children: tree.children,
           });
           console.log(
             `Sheet ${sheetName} Row ${i}: POST result:`,
@@ -370,11 +260,9 @@ function buildNestedStructure(areaName, buildingName, floorName, roomName) {
             err.message || err
           );
         }
-
-        await new Promise((r) => setTimeout(r, 200)); // 200ms
+        await new Promise((r) => setTimeout(r, 200)); // avoid flooding
       }
     }
-
     console.log("Done processing Excel sheets.");
   } catch (err) {
     console.error("Fatal error:", err);
