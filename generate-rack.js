@@ -48,7 +48,18 @@ const houseNameIdMap = {
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // Main
-
+const specGenerator = (type, mgmtIp, serviceIp, clusterIp, os) => {
+  if (type?.toLowerCase() === "server") {
+    return JSON.stringify({
+      ip_service_ip: serviceIp,
+      operating_system_flavor: os,
+    });
+  } else if (type?.toLowerCase() === "storage") {
+    return JSON.stringify({ ip_cluster_ip: clusterIp });
+  } else {
+    return JSON.stringify({ ip_management_ip: mgmtIp });
+  }
+};
 async function processExcelSheets(
   sheetNames,
   excelFilePath = "NBR__logical-connectivity-data.xlsx"
@@ -75,6 +86,8 @@ async function processExcelSheets(
         const model = row.model?.trim();
         const mgmtIp = row["Mgmt IP"]?.trim();
         const serviceIp = row["Service IP"]?.trim();
+        const clusterIp = row["Cluster IP"]?.trim();
+        const os = row["OS"]?.trim();
 
         if (!houseNameIdMap[house]) {
           console.warn(
@@ -125,11 +138,7 @@ async function processExcelSheets(
               rack_position: rackPosition,
               equipment_name: name,
               extra_device_specification: JSON.stringify(
-                type?.toLowerCase() === "server"
-                  ? { ip_service_ip: serviceIp }
-                  : {
-                      ip_management_ip: mgmtIp,
-                    }
+                specGenerator(type, mgmtIp, serviceIp, clusterIp, os)
               ),
             },
           ],
@@ -160,7 +169,7 @@ async function processExcelSheets(
 const sheetNames = [
   // "structure-NBR-New-Bldg",
   // "structure-dc-network",
-      // "structure-dc_system",
+  // "structure-dc_system",
   // "structure-dch-network",
   // "structure-dch", skipping
   // "structure-mch",
