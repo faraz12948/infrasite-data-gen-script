@@ -1,12 +1,14 @@
 const XLSX = require("xlsx");
 const { Client } = require("pg");
 const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
 
 // DB client
 const client = new Client({
   user: "root",
   host: "localhost",
-  database: "ca_mgt_v3",
+  database: "ca_mgt_v4",
   password: "ca-mgt",
   port: 5432,
 });
@@ -47,6 +49,57 @@ const houseNameIdMap = {
 // Sleep helper
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+// Logger setup for file output with colored errors/warnings
+const LOG_DIR = path.join(__dirname, "logs");
+try {
+  fs.mkdirSync(LOG_DIR, { recursive: true });
+} catch {}
+const LOG_FILE = path.join(LOG_DIR, "generate-rack.txt");
+const logStream = fs.createWriteStream(LOG_FILE, { flags: "a" });
+const colors = { reset: "\x1b[0m", red: "\x1b[31m", yellow: "\x1b[33m" };
+const originalConsole = {
+  log: console.log,
+  warn: console.warn,
+  error: console.error,
+};
+function fmt(args) {
+  return args
+    .map((a) => {
+      if (typeof a === "string") return a;
+      if (a instanceof Error) return a.stack || a.message;
+      try {
+        return JSON.stringify(a);
+      } catch {
+        return String(a);
+      }
+    })
+    .join(" ");
+}
+function write(line, color) {
+  if (color) logStream.write(color + line + colors.reset + "\n");
+  else logStream.write(line + "\n");
+}
+console.log = (...args) => {
+  const line = `[${new Date().toISOString()}] INFO: ${fmt(args)}`;
+  originalConsole.log(line);
+  write(line);
+};
+console.warn = (...args) => {
+  const line = `[${new Date().toISOString()}] WARN: ${fmt(args)}`;
+  originalConsole.warn(colors.yellow + line + colors.reset);
+  write(line, colors.yellow);
+};
+console.error = (...args) => {
+  const line = `[${new Date().toISOString()}] ERROR: ${fmt(args)}`;
+  originalConsole.error(colors.red + line + colors.reset);
+  write(line, colors.red);
+};
+process.on("exit", () => {
+  try {
+    logStream.end();
+  } catch {}
+});
+
 // Main
 const specGenerator = (type, mgmtIp, serviceIp, clusterIp, os) => {
   if (type?.toLowerCase() === "server") {
@@ -79,7 +132,7 @@ async function processExcelSheets(
         const house = row.house?.trim();
         const rackName = row.rack?.trim();
         const rackPosition = row["rack-position"].toString();
-        const tag = row.tag?.trim();
+        const tag = row.tag != null ? String(row.tag).trim() : undefined;
         const name = row.name?.trim();
         const make = row.make?.trim();
         const type = row.type?.trim();
@@ -118,8 +171,8 @@ async function processExcelSheets(
            FROM equipments e
            JOIN make m ON m.id::text = e.make::text
            JOIN asset_type at ON at.id::text = e.type::text
-           WHERE LOWER(e.model) = LOWER($1)`,
-          [model]
+           WHERE LOWER(e.model) = LOWER($1) AND LOWER(at.type) = LOWER($2)`,
+          [model, type]
         );
         if (equipRes.rows.length === 0) {
           console.warn(
@@ -168,41 +221,41 @@ async function processExcelSheets(
 // Example usage:
 const sheetNames = [
   // "structure-NBR-New-Bldg",
-  // "structure-dc-network",
+  "structure-dc-network",
   // "structure-dc_system",
-  // "structure-dch-network",
-  // "structure-dch", skipping
-  // "structure-mch",
-  // "structure-mch_moduler", issue found
-  // "structure-dch-summary", issue found
-  // "structure-dch_moduler", issue found
-  // "structure-nbr-dr-network", issue found
-  // "structure-cch_moduler", issue found
-  // "structure-cch", issue found
-  // "structure-icd_moduler", issue found
-  // "structure-bch",
-  // "structure-bch_moduler", issue found
-  // "structure-pch", string trim error
-  // "structure-pch_moduler", issue found
-  // "structure-cchbond",
-  // "structure-dhakabond",
-  // "structure-adamjee",
-  // "structure-UEPZ",
-  // "structure-dhaka-epz",
-  // "structure-cepz",
-  // "structure-darshana",
-  // "structure-bhomra",
-  // "structure-banglabandha",
-  // "structure-hilli",
-  // "structure-burimari",
-  // "structure-sonamasjid",
-  // "structure-teknaf",
-  // "structure-Akhawra",
-  // "structure-rohanpur",
-  // "structure-tamabil",
-  // "structure-shonahut",
-  // "structure-Shewla",
-  // "structure-Dhanua",
-  // "structure-bibirbazar",
+  "structure-dch-network",
+  // "structure-dch_system",
+  "structure-dch",
+  "structure-mch",
+  "structure-dch-summary",
+  "structure-dch_moduler",
+  "structure-nbr-dr-network",
+  "structure-cch_moduler",
+  "structure-cch",
+  // "structure-icd_moduler",
+  "structure-bch",
+  "structure-bch_moduler",
+  "structure-pch",
+  "structure-pch_moduler",
+  "structure-cchbond",
+  "structure-dhakabond",
+  "structure-adamjee",
+  "structure-UEPZ",
+  "structure-dhaka-epz",
+  "structure-cepz",
+  "structure-darshana",
+  "structure-bhomra",
+  "structure-banglabandha",
+  "structure-hilli",
+  "structure-burimari",
+  "structure-sonamasjid",
+  "structure-teknaf",
+  "structure-Akhawra",
+  "structure-rohanpur",
+  "structure-tamabil",
+  "structure-shonahut",
+  "structure-Shewla",
+  "structure-Dhanua",
+  "structure-bibirbazar",
 ];
 processExcelSheets(sheetNames);
