@@ -4,7 +4,7 @@ const XLSX = require("xlsx");
 const path = require("path");
 const { Client } = require("pg");
 const axios = require("axios");
-const fs = require("fs");
+const { initLogger } = require("./logger");
 
 const EXCEL_PATH = path.join(__dirname, "NBR__logical-connectivity-data.xlsx");
 
@@ -47,56 +47,7 @@ const houseNameIdMap = {
 };
 // === Postgres client ===
 const pgClient = new Client({ connectionString: pgConnectionString });
-// Logger setup for file output with colored errors/warnings
-const LOG_DIR = path.join(__dirname, "logs");
-try {
-  fs.mkdirSync(LOG_DIR, { recursive: true });
-} catch {}
-const LOG_FILE = path.join(LOG_DIR, "generate-association.txt");
-const logStream = fs.createWriteStream(LOG_FILE, { flags: "a" });
-const colors = { reset: "\x1b[0m", red: "\x1b[31m", yellow: "\x1b[33m" };
-const originalConsole = {
-  log: console.log,
-  warn: console.warn,
-  error: console.error,
-};
-function fmt(args) {
-  return args
-    .map((a) => {
-      if (typeof a === "string") return a;
-      if (a instanceof Error) return a.stack || a.message;
-      try {
-        return JSON.stringify(a);
-      } catch {
-        return String(a);
-      }
-    })
-    .join(" ");
-}
-function write(line, color) {
-  if (color) logStream.write(color + line + colors.reset + "\n");
-  else logStream.write(line + "\n");
-}
-console.log = (...args) => {
-  const line = `[${new Date().toISOString()}] INFO: ${fmt(args)}`;
-  originalConsole.log(line);
-  write(line);
-};
-console.warn = (...args) => {
-  const line = `[${new Date().toISOString()}] WARN: ${fmt(args)}`;
-  originalConsole.warn(colors.yellow + line + colors.reset);
-  write(line, colors.yellow);
-};
-console.error = (...args) => {
-  const line = `[${new Date().toISOString()}] ERROR: ${fmt(args)}`;
-  originalConsole.error(colors.red + line + colors.reset);
-  write(line, colors.red);
-};
-process.on("exit", () => {
-  try {
-    logStream.end();
-  } catch {}
-});
+initLogger("generate-association");
 // Helper: read Excel sheet into array of rows
 function readSheet(sheet, workbook) {
   const worksheet = workbook.Sheets[sheet];
@@ -179,7 +130,7 @@ function findOrCreateNode(parent, type, name) {
     await pgClient.connect();
     const sheetNames = [
       // "structure-dc-network",
-      // "structure-dc_system",
+      "structure-dc_system",
       // "structure-NBR-New-Bldg",
       // "structure-dch-network",
       "structure-dch_system",
@@ -191,6 +142,7 @@ function findOrCreateNode(parent, type, name) {
       // "structure-nbr-dr-network",
       // "structure-cch_moduler",
       // "structure-cch",
+      "structure-icd",
       // "structure-icd_moduler",
       // "structure-bch",
       // "structure-bch_moduler",
@@ -202,20 +154,20 @@ function findOrCreateNode(parent, type, name) {
       // "structure-UEPZ",
       // "structure-dhaka-epz",
       // "structure-cepz",
-      "structure-darshana",
-      "structure-bhomra",
-      "structure-banglabandha",
-      "structure-hilli",
-      "structure-burimari",
-      "structure-sonamasjid",
-      "structure-teknaf",
-      "structure-Akhawra",
-      "structure-rohanpur",
-      "structure-tamabil",
-      "structure-shonahut",
-      "structure-Shewla",
-      "structure-Dhanua",
-      "structure-bibirbazar",
+      // "structure-darshana",
+      // "structure-bhomra",
+      // "structure-banglabandha",
+      // "structure-hilli",
+      // "structure-burimari",
+      // "structure-sonamasjid",
+      // "structure-teknaf",
+      // "structure-Akhawra",
+      // "structure-rohanpur",
+      // "structure-tamabil",
+      // "structure-shonahut",
+      // "structure-Shewla",
+      // "structure-Dhanua",
+      // "structure-bibirbazar",
     ];
     const workbook = XLSX.readFile(EXCEL_PATH);
     for (const sheetName of sheetNames) {
