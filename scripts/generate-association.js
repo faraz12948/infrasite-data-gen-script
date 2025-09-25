@@ -6,7 +6,10 @@ const { Client } = require("pg");
 const axios = require("axios");
 const { initLogger } = require("../logger");
 
-const EXCEL_PATH = path.join(__dirname, "NBR__logical-connectivity-data.xlsx");
+const EXCEL_PATH = path.join(
+  __dirname,
+  "../NBR__logical-connectivity-data.xlsx"
+);
 
 // === Configure these (or set via env) ===
 const pgConnectionString =

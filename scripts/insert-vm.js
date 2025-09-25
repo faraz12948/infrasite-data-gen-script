@@ -32,13 +32,13 @@ async function main() {
     console.log("Connected to Postgres.");
     // 1. Read all data sources
     const vms = [
-      ...readCsv(path.join(__dirname, "EDC_VM_List.csv")),
-      ...readCsv(path.join(__dirname, "NDC_VM_List.csv")),
+      ...readCsv(path.join(__dirname, "../csvs/EDC_VM_List.csv")),
+      ...readCsv(path.join(__dirname, "../csvs/NDC_VM_List.csv")),
     ];
 
     const servers = [
-      ...readCsv(path.join(__dirname, "structure-dc_system.csv")),
-      ...readCsv(path.join(__dirname, "structure-dch_system.csv")),
+      ...readCsv(path.join(__dirname, "../csvs/structure-dc_system.csv")),
+      ...readCsv(path.join(__dirname, "../csvs/structure-dch_system.csv")),
     ];
 
     console.log(`Found ${vms.length} total VMs.`);
@@ -139,9 +139,9 @@ async function main() {
         const response = await axios.post(`${BASE_URL}/api/v1/vm`, payload);
         if (response.data && response.data.messageCode === "SUCCESS") {
           console.log(
-            `VM #${i + 1} (${vm["OVM Name"]}): Successfully inserted. ${
-              JSON.stringify(response.data)
-            }`
+            `VM #${i + 1} (${
+              vm["OVM Name"]
+            }): Successfully inserted. ${JSON.stringify(response.data)}`
           );
         } else {
           console.error(
