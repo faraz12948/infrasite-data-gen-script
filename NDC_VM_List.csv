@@ -1,0 +1,54 @@
+#,OVM Name,Service Name,Responsible Person,Private IP,Hostname/Tag,Status,Processors,Max. Processors,Memory (GB),Max. Memory (GB),"Storage
+(GB)","Storage-Partition
+(GB)",Operating System,Server,Physical Server Tag
+1,NDCENTSLAVEDNS,Slave Local DNS Server,System,172.21.36.12,ndcslavedns,Running,2,2,8,8,100,100,Oracle Linux 7,ovcacn10r1,2042XLB0CU
+2,NDCAWOASETL,OAS-ETL,Software,172.21.36.17,,Running,1,1,2,2,50,50,Oracle Linux 7,ovcacn12r1,2042XLB0CE
+3,NDCAWOASDW,OAS-DW,Software,172.21.36.19,,Running,16,16,128,128,5220,"100, 5120",Oracle Linux 7,ovcacn08r1,2042XLB0CN
+4,NDCAWEPAY01,AW EPAY & Other Web Service Live(Server-01),Sarwar Sir,172.21.36.20,,Running,8,8,16,16,2248,"200, 2048",Oracle Linux 7,ovcacn08r1,2042XLB0CN
+5,NDCENTADC,Additional Active Directory,System,172.21.36.24,NDCENTADC,Stopped,4,4,16,16,200,200,Microsoft Windows Server 2019,ovcacn10r1,2042XLB0CU
+6,NDCAWDMS,Document Management System,Software,172.21.36.28,,Running,4,4,12,12,200,"100, 1024",Oracle Linux 7,ovcacn12r1,2042XLB0CE
+7,NDCPAMAPP,PAM Application Server,Network,172.21.36.32,,Stopped,6,6,12,12,1324,"100, 200, 1024",Microsoft Windows Server 2019,ovcacn08r1,2042XLB0CN
+8,NDCPAMSGW,PAM Secure Gateway Server (SGW),Network,172.21.36.33,,Stopped,6,6,12,12,100,100,Oracle Linux 8,ovcacn08r1,2042XLB0CN
+9,NDCPAMDB,PAM Database Server(MS SQL),Network,172.21.36.34,,Stopped,6,6,20,20,700,"100,300,300",Microsoft Windows Server 2019,ovcacn08r1,2042XLB0CN
+10,NDCAWEM,AWDB Enterprise Manager,Database,172.21.36.40,,Running,6,6,16,16,500,"100,400",Oracle Linux 7,ovcacn09r1,2042XLB0DD
+11,NDCAWEXADC,Exchange Additional Active Directory,System,172.21.36.42,NDCAWEXADC,Running,8,8,32,32,400,"200, 200",Microsoft Windows Server 2019,ovcacn12r1,2042XLB0CE
+12,NDCAWZABBIX,Zabbix,System,172.21.36.47,ndczabbix,Stopped,2,2,8,8,100,100,Oracle Linux 8,ovcacn09r1,2042XLB0DD
+13,NDCAWCOMMSRV,Commvault Server,System,172.21.36.48,NDCAWCOMMSRV,Running,8,8,32,32,800,"300,500",Microsoft Windows Server 2019,ovcacn08r1,2042XLB0CN
+14,NDCVASDB,VAT Accounting System,Software,172.21.36.49,,Running,6,6,32,32,600,"100,500",Oracle Linux 7,ovcacn09r1,2042XLB0DD
+15,NDCAWSYSLOG,Syslog Server (Network),Network,172.21.36.55,,Running,4,4,16,16,2048,"900, 1100",Oracle Linux 7,ovcacn12r1,2042XLB0CE
+16,NDCCAMS,Customs Agent Management System,Software,172.21.36.57,,Running,2,2,4,4,300,,Oracle Linux 7,ovcacn09r1,2042XLB0DD
+17,NDCAWFTP01,NBR AW FTP,Sarwar Sir,172.21.57.14,,Stopped,8,8,16,16,400,"100, 300",Oracle Linux 7,ovcacn08r1,2042XLB0CN
+18,NDCAWAEX,Additional Mail Server,System,"172.21.57.16
+172.21.37.16",NDCAWAEX,Running,16,16,128,128,500,"200, 300",Microsoft Windows Server 2019,ovcacn09r1,2042XLB0DD
+19,NDCAWOASAPP,OAS-Application,Software,172.21.57.17,,Running,16,16,128,128,200,200,Oracle Linux 7,ovcacn11r1,2042XLB0CY
+20,NDCAWBOND,Diplomatic Bond Management System,Software,172.21.57.18,,Running,4,4,12,12,300,"100,200",Oracle Linux 7,ovcacn10r1,2042XLB0CU
+21,NDCSOPHOSUM,Sophos Message Relay Server(Update Manager),Network,172.21.57.20,,Running,4,4,12,12,300,"100,200",Microsoft Windows Server 2019,ovcacn12r1,2042XLB0CE
+22,NDCAWPOSTMASTER,AW Postmaster,Software,172.21.57.22,,Running,6,6,12,12,100,,Cent OS 7,ovcacn12r1,2042XLB0CE
+23,NDCAWGITLABPRO,GitLab-Production,Software,172.21.57.25,,Running,6,6,12,12,300,"100,200",Oracle Linux 7,ovcacn08r1,2042XLB0CN
+24,NDCCAMSUAT,Customs Agent Management System (UAT),Software,172.21.57.26,,Stopped,2,2,8,8,500,"100, 400",Oracle Linux 8,ovcacn11r1,2042XLB0CY
+25,NDCAWSTORE,NBR Store Management,Software,172.21.57.28,,Running,2,2,8,8,500,"100, 400",Oracle Linux 8,ovcacn08r1,2042XLB0CN
+26,NDCAWUMS,User Management System,Software,172.21.57.29,,Running,4,4,12,12,300,"100,200",Oracle Linux 7,ovcacn12r1,2042XLB0CE
+27,NDCAWBONDUAT,Diplomatic Bond Management System(Cloned),Software,172.21.57.30,,Running,4,4,12,12,300,"100,200",Oracle Linux 7,ovcacn11r1,2042XLB0CY
+28,NDCBDCUSTOMS-NEW,BD Customs Website,Monir Sir,172.21.64.31,,Running,2,4,8,8,100,100,Oracle Linux 8,ovcacn11r1,2042XLB0CY
+29,NDCHUBBDCUSTOMS,Bangladesh Customs HUB Hscode,Sarwar Sir,172.21.64.32,,Running,4,4,8,8,300,300,Ubuntu 22.4,ovcacn11r1,2042XLB0CY
+30,NDCAWCAAMS,Asset management system,Software,172.21.57.32,,Running,4,4,8,8,50,50,Oracle Linux 7,ovcacn08r1,2042XLB0CN
+31,NDCVASAPP,VAT Accounting System,Software,172.21.57.33,,Running,4,4,12,12,100,100,Oracle Linux 7,ovcacn12r1,2042XLB0CE
+32,NDCREWARDAPP,Reward,Software,172.21.57.34,,Running,4,4,8,8,150,,Oracle Linux 7,ovcacn11r1,2042XLB0CY
+33,NDCAWQR,QR Code,Rajib Sir,172.21.57.36,,Running,2,2,2,2,100,100,Oracle Linux 7,ovcacn08r1,2042XLB0CN
+34,NDCPOC,CA-Mgmt,Software,172.21.57.37,,Running,4,4,8,8,100,100,Ubuntu 22.4,ovcacn07r1,2042XLB0CJ
+35,NDCPMIS,PMIS,Zakir Sir,172.21.57.38,,Running,2,2,4,4,100,100,Microsoft Windows Server 2019,ovcacn10r1,2042XLB0CU
+36,NDCGAZETTE,NDCGAZETTE/SRO,Software,172.21.57.39,,Running,4,4,8,8,50,50,Oracle Linux 7,ovcacn10r1,2042XLB0CU
+37,NDCDGM,Detained Goods Management,Software,172.21.57.41,,Running,2,2,4,4,25,25,Oracle Linux 7.9,ovcacn08r1,2042XLB0CN
+38,NDCDGM-UAT,Detained Goods Management UAT,Software,172.21.57.42,,Stopped,2,2,4,4,25,25,Oracle Linux 7.9,ovcacn07r1,2042XLB0CJ
+39,NDCAWUMS-UAT,User Management System Test,Software,172.21.57.204,,Running,4,4,12,12,300,"100,200",Oracle Linux 7,ovcacn12r1,2042XLB0CE
+40,NDCBMAPAPP,BMAP APP,Sarwar sir,172.21.50.13,,Running,16,24,32,32,1024,,Oracle Linux 7,ovcacn10r1,2042XLB0CU
+41,NDCBMAPDB,BMAP Database,Sarwar Sir,172.21.50.12,,Running,16,24,32,32,1124,"100,1024",Oracle Linux 7,ovcacn09r1,
+42,NDCBMAPWEB,BMAP Web,Sarwar Sir,172.21.63.12,,Running,16,16,32,32,1024,1024,Oracle Linux 7,ovcacn10r1,2042XLB0CU
+43,NDCCMS,CASE MANAGEMENT SYSTEM,Rajib Sir,172.21.57.43,,Running,2,2,4,4,40,"25,15",Oracle Linux 7.9,ovcacn11r1,2042XLB0CY
+44,NDCADVANCERULIING,NDCADVANCERULIING,Sarwar Sir,172.21.57.44,,Running,2,2,4,4,200,200,Oracle Linux 9.2,ovcacn12r1,2042XLB0CE
+45,NDCAPPEALPROCEDURE,NDCAPPEALPROCEDURE,Sarwar Sir,172.21.57.45,,Running,2,2,4,4,200,200,Oracle Linux 9.2,ovcacn12r1,2042XLB0CE
+46,NDCASYPMWEB,NDCASYPMWEB,Sarwar Sir,172.21.57.46,,Running,4,4,8,8,500,"100,400",Oracle Linux 7.9,ovcacn10r1,2042XLB0CU
+47,NDCAWSEIZURE,Seizure database,Rajib Sir,172.21.57.47,,Running,2,2,4,4,50,50,Oracle Linux 7.9,ovcacn07r1,2042XLB0CJ
+48,NDDGM-NEW,Detained Good Management,Software,172.21.57.48,,Running,2,2,4,4,50,50,Oracle Linux 7.9,ovcacn07r1,2042XLB0CJ
+49,NDCAWCAMGMT,Infrastrcture Monitoring,Software,172.21.57.49,,Running,8,8,4,4,100,100,Oracle Linux 9.5,ovcacn07r1,2042XLB0CJ
+50,NDCBRCHALLAN,Baggage Duty Collection System ,Monir Sir,172.21.64.33,,Running,8,8,4,4,300,300,Oracle Linux 7.9,ovcacn07r1,2042XLB0CJ

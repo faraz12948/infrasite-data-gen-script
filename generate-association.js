@@ -143,7 +143,7 @@ function findOrCreateNode(parent, type, name) {
       // "structure-cch_moduler",
       // "structure-cch",
       "structure-icd",
-      // "structure-icd_moduler",
+      "structure-icd_moduler",
       // "structure-bch",
       // "structure-bch_moduler",
       // "structure-pch",

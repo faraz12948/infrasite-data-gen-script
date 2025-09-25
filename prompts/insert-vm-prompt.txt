@@ -1,0 +1,281 @@
+# VM Insertion into Servers
+
+## Source Files
+
+- **VM list files**:  
+  - `NDC_VM_List.csv`  
+  - `EDC_VM_List.csv`  
+
+- **Server structure files**:  
+  - `structure-dc_system.csv`  
+  - `structure-dch_system.csv`  
+
+---
+
+## Field Mappings
+
+### From Server Structure Files (`structure-dc_system.csv`, `structure-dch_system.csv`)
+
+| Target Field    | Source Column   |
+|-----------------|-----------------|
+| `rack_make`     | rack-make       |
+| `rack_rack`     | rack            |
+| `server_make`   | make            |
+| `rack_u_count`  | rack-u-count    |
+| `server_model`  | model           |
+| `rack_position` | rack-position   |
+
+### From VM List Files (`NDC_VM_List.csv`, `EDC_VM_List.csv`)
+
+| Target Field             | Source Column          |
+|---------------------------|------------------------|
+| `memory_gb_`              | Memory (GB)            |
+| `processors`              | Processors             |
+| `storage_gb_`             | Storage (GB)           |
+| `operating_system`        | Operating System       |
+| `storage_partition_gb_`   | Storage-Partition (GB) |
+
+---
+
+## Additional Rules
+
+- `server_series` should remain **empty**.  
+- If the **Hostname/Tag** column is empty in a row (in either `NDC_VM_List.csv` or `EDC_VM_List.csv`), **skip that row** and continue with the next one.  
+
+
+GET API:
+http://localhost:5001/api/v1/rack-details/e9f9b583-456a-424c-9f85-43f0de0212b0
+
+Query:
+SELECT erp.parent_rack_id AS "parentRackId", erp.equipment_id AS "equipmentId", erp.equipment_name AS "equipmentName", e.name, at.type, m.name as "makeName" , e.model, erp.rack_position AS "rackPosition", erp.tag as "equipmentTag", erp.id as "equipmentRackMappingId" FROM equipment_rack_mapping erp LEFT JOIN equipments e ON erp.equipment_id = e.id
+      LEFT JOIN asset_type at ON at.id:: text = e.type LEFT JOIN make m ON m.id :: text = e.make WHERE erp.parent_rack_id = $1
+
+Response:
+{
+    "messageCode": "SUCCESS",
+    "data": [
+        {
+            "parentRackId": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+            "equipmentId": "5357d6a8-77e4-465d-9807-b56b2ce4b80f",
+            "equipmentName": "ZFS Disk Self 02",
+            "name": "ZFS Disk Self 02",
+            "type": "Storage",
+            "makeName": "Oracle",
+            "model": "Oracle DE3-24C",
+            "rackPosition": "16-19",
+            "equipmentTag": "2046NMQ804",
+            "equipmentRackMappingId": "d86df0e2-3a0a-43cb-86c2-83694f52cea1"
+        },
+        {
+            "parentRackId": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+            "equipmentId": "064cd6dd-de52-4fc5-957c-9c1c8c26acf2",
+            "equipmentName": "ZFS Controller 01",
+            "name": "ZFS Controller 01",
+            "type": "Storage",
+            "makeName": "Oracle",
+            "model": "Oracle ZS7-2",
+            "rackPosition": "10-11",
+            "equipmentTag": "2047XC209J",
+            "equipmentRackMappingId": "4f4d050b-2504-4a11-a53a-0b9625a2dc8f"
+        },
+        {
+            "parentRackId": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+            "equipmentId": "fb88048a-e59f-4e20-a181-91aed79cc3b2",
+            "equipmentName": "X8-2 App 01",
+            "name": "Conpute Node 02",
+            "type": "Server",
+            "makeName": "Oracle",
+            "model": "Oracle X8-2",
+            "rackPosition": "25",
+            "equipmentTag": "2117XCB00B",
+            "equipmentRackMappingId": "e022465c-3893-499a-8437-db668e77dfc2"
+        },
+        {
+            "parentRackId": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+            "equipmentId": "fb88048a-e59f-4e20-a181-91aed79cc3b2",
+            "equipmentName": "X8-2 App 02",
+            "name": "Conpute Node 02",
+            "type": "Server",
+            "makeName": "Oracle",
+            "model": "Oracle X8-2",
+            "rackPosition": "26",
+            "equipmentTag": "2117XCB00D",
+            "equipmentRackMappingId": "50abcac0-00a1-473e-bc99-370247a9449f"
+        },
+        {
+            "parentRackId": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+            "equipmentId": "fb88048a-e59f-4e20-a181-91aed79cc3b2",
+            "equipmentName": "X8-2 Web",
+            "name": "Conpute Node 02",
+            "type": "Server",
+            "makeName": "Oracle",
+            "model": "Oracle X8-2",
+            "rackPosition": "27",
+            "equipmentTag": "2117XCB009",
+            "equipmentRackMappingId": "a09ff958-1008-47d7-a3d5-e1e07b05207a"
+        },
+        {
+            "parentRackId": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+            "equipmentId": "fb88048a-e59f-4e20-a181-91aed79cc3b2",
+            "equipmentName": "X8-2 DNS",
+            "name": "Conpute Node 02",
+            "type": "Server",
+            "makeName": "Oracle",
+            "model": "Oracle X8-2",
+            "rackPosition": "28",
+            "equipmentTag": "2117XCB00E",
+            "equipmentRackMappingId": "8adef205-cbf1-47dd-8682-9ed5d22714ac"
+        },
+        {
+            "parentRackId": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+            "equipmentId": "56d930b3-7a3c-49e0-b5c8-e1107ec48fe1",
+            "equipmentName": "Media Server",
+            "name": "Media Server",
+            "type": "Server",
+            "makeName": "Dell",
+            "model": "Dell Power Edge R740",
+            "rackPosition": "34-35",
+            "equipmentTag": "CNL3TD3",
+            "equipmentRackMappingId": "713b6ab2-b600-4a67-82ae-f80a89e8acad"
+        }
+    ]
+}
+
+GET API:
+http://localhost:5001/api/v1/equipment/56d930b3-7a3c-49e0-b5c8-e1107ec48fe1
+
+Query:
+SELECT 
+        e.id, 
+        e.name, 
+        e.type,  -- This is type ID
+        at.type as "equipmentType", -- This is type name for display if needed, but primary 'type' is ID
+        e.make,  -- This is make ID
+        m.name as "makeName", -- This is make name for display if needed, but primary 'make' is ID
+        e.tag, 
+        e.model, 
+        e.svg_path, 
+        e.unit,
+        ds.spec as "specification",
+        l.front_legends,
+        l.rear_legends,
+        l.front_img_path,
+        l.front_legend_img_path,
+        l.rear_img_path,
+        l.rear_legend_img_path
+      FROM equipments e
+      LEFT JOIN asset_type at ON e.type = at.id::text
+      LEFT JOIN make m ON e.make = m.id::text
+      LEFT JOIN device_specification ds ON e.id = ds.equipment_id AND e.model = ds.model
+      LEFT JOIN legends l ON e.model = l.model
+      WHERE e.id::text = $1;
+
+Response:
+{
+    "messageCode": "SUCCESS",
+    "data": {
+        "id": "56d930b3-7a3c-49e0-b5c8-e1107ec48fe1",
+        "name": "Media Server",
+        "type": "f18ae577-d37b-422b-8523-442293d26100",
+        "make": "c21667f9-11fe-44ba-87c4-8d1eec4b1b0a",
+        "tag": "BNL3TD3",
+        "model": "Dell Power Edge R740",
+        "svg_path": "",
+        "unit": 2
+    }
+}
+
+GET API:
+http://localhost/api/v1/vm/rack/77b005ad-8a78-443c-8423-d16d326942d8
+
+Query:
+SELECT * FROM vmlist WHERE rack_id = $1
+
+Response:
+{
+    "messageCode": "SUCCESS",
+    "data": [
+        {
+            "id": "d3268067-bc4e-42ee-8704-a13e8cfe793c",
+            "ovm_name": "EDCENTSLAVEDNS",
+            "service_name": "Slave Local DNS Server",
+            "ip": "172.21.4.12",
+            "hostname_tag": "DNSSLAVE",
+            "status": "Running",
+            "spec": {
+                "rack_make": "SUN Oracle",
+                "rack_rack": "Rack-11",
+                "memory_gb_": "8",
+                "processors": "2",
+                "server_make": "Oracle",
+                "storage_gb_": "100",
+                "rack_u_count": "42",
+                "server_model": "ORACLE SERVER X8-2",
+                "rack_position": "7-12",
+                "server_series": "ORACLE x86",
+                "operating_system": "Oracle Linux 7",
+                "storage_partition_gb_": "100"
+            },
+            "rack_id": "77b005ad-8a78-443c-8423-d16d326942d8",
+            "equipment_id": "fb88048a-e59f-4e20-a181-91aed79cc3b2",
+            "equipment_rack_mapping_id": "540c9dc6-a2c4-4030-baf1-6242927c783b"
+        },
+        {
+            "id": "6737a91c-8336-4a97-a36e-5aca988289d8",
+            "ovm_name": "EDCAWDMS",
+            "service_name": "ASYCUDA World Document Management System (OpenKM)",
+            "ip": "172.21.4.28",
+            "hostname_tag": "EDCAWDMS",
+            "status": "Running",
+            "spec": {
+                "rack_make": "SUN Oracle",
+                "rack_rack": "Rack-11",
+                "memory_gb_": "12",
+                "processors": "4",
+                "server_make": "Oracle",
+                "storage_gb_": "1124",
+                "rack_u_count": "42",
+                "server_model": "ORACLE SERVER X8-2",
+                "rack_position": "7-12",
+                "server_series": "ORACLE x86",
+                "operating_system": "Oracle Linux 7",
+                "storage_partition_gb_": "100, 1024"
+            },
+            "rack_id": "77b005ad-8a78-443c-8423-d16d326942d8",
+            "equipment_id": "fb88048a-e59f-4e20-a181-91aed79cc3b2",
+            "equipment_rack_mapping_id": "bf3a8770-c37b-41a3-b09b-a833c66f8bec"
+        }
+    ]
+}
+
+POST API:
+http://localhost:5001/api/v1/vm
+
+Query:
+INSERT INTO vmlist (ovm_name, service_name, ip, hostname_tag, status, spec, rack_id, equipment_id, equipment_rack_mapping_id) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;
+
+Payload:
+{
+    "ovm_name": "EDCAWETICKET",
+    "service_name": "eTicket (HelpDesk Support)",
+    "ip": "192.168.0.1",
+    "hostname_tag": "eticket",
+    "status": "Running",
+    "spec": {
+        "rack_make": "SUN Oracle",
+        "rack_rack": "Rack-11",
+        "memory_gb_": "12",
+        "processors": "4",
+        "server_make": "Oracle",
+        "storage_gb_": "200",
+        "rack_u_count": "42",
+        "server_model": "ORACLE SERVER X8-2",
+        "rack_position": "7-12",
+        "server_series": "ORACLE x86",
+        "operating_system": "Oracle Linux 7",
+        "storage_partition_gb_": "200"
+    },
+    "rack_id": "e9f9b583-456a-424c-9f85-43f0de0212b0",
+    "equipment_id": "56d930b3-7a3c-49e0-b5c8-e1107ec48fe1",
+    "equipment_rack_mapping_id": "713b6ab2-b600-4a67-82ae-f80a89e8acad"
+}

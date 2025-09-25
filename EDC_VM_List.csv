@@ -1,0 +1,43 @@
+#,OVM Name,Service Name,Responsible Person,Private IP,Hostname/Tag,Status,Processors,Max. Processors,Memory (GB),Max. Memory (GB),"Storage
+(GB)","Storage-Partition
+(GB)",Operating System,Server,Physical Server Tag
+1,EDCENTSLAVEDNS,Slave Local DNS Server,System,172.21.4.12,edcawslave,Running,2,2,8,8,100,100,Oracle Linux 7,ovcacn12r1,2042XLB0D5
+2,EDCAWEPAY01,AW EPAY & Other Web Service Live(Server-01),Sarwar Sir,172.21.4.20,edcawepay01,Running,8,8,16,16,2248,"200, 2048",Oracle Linux 7,ovcacn08r1,2042XLB0D7
+3,EDCAWEPAY02,AW EPAY & Other Web Service Backup(Server-02),Sarwar Sir,172.21.4.21,edcawepay02,Running,8,8,16,16,2248,"200, 2048",Oracle Linux 7,ovcacn12r1,2042XLB0D5
+4,EDCAWSVN,SVN,Sarwar Sir,172.21.4.22,edcawsvm,Running,2,4,4,4,100,100,Oracle Linux 7,ovcacn07r1,2042XLB0CW
+5,EDCENTPDC,Active Directory PAM,System,172.21.4.23,EDCENTPDC,Stopped,4,6,16,16,200,200,Microsoft Windows Server 2019,ovcacn09r1,2042XLB0D6
+6,EDCENTADC,Additional Active Directory PAM,System,172.21.4.24,EDCENTADC,Stopped,4,6,16,16,200,200,Microsoft Windows Server 2019,ovcacn08r1,2042XLB0D7
+8,EDCAWDMS,ASYCUDA World Document Management System (OpenKM),Software,172.21.4.28,,Running,4,4,12,12,1124,"100, 1024",Oracle Linux 7,ovcacn10r1,2042XLB0CL
+10,EDCAWCYUM,Central YUM Server,System,172.21.4.30,edcawyum,Running,2,2,8,8,100,100,Oracle Linux 7,ovcacn10r1,2042XLB0CL
+11,EDCASSETMGMT,IT Asset Tracking & Management System (LUMOS),Software,172.21.4.31,,Running,4,4,8,8,300,"100,200",Oracle Linux 7,ovcacn08r1,2042XLB0D7
+12,EDCPAMAPP01,PAM Application Server-01,Network,172.21.4.32,,Stopped,6,6,12,12,2348,"100, 200, 2048(share)",Microsoft Windows Server 2019,ovcacn10r1,2042XLB0CL
+13,EDCPAMAPP02,PAM Application Server-02,Network,172.21.4.32,,Stopped,6,6,12,12,300,"100,200,2048(share)",Microsoft Windows Server 2019,ovcacn10r1,2042XLB0CL
+14,EDCPAMSGW01,PAM Secure Gateway Server (SGW),Network,172.21.4.34,,Stopped,4,6,12,12,100,100,Oracle Linux 8,ovcacn12r1,2042XLB0D5
+15,EDCPAMDB01,PAM Database Server(MS SQL),Network,172.21.4.35,,Stopped,6,6,20,20,700,"100,300,300",Microsoft Windows Server 2019,ovcacn12r1,2042XLB0D5
+16,EDCPAMUAT01,PAM UAT,Network,172.21.4.36,,Stopped,4,6,12,12,300,"100,200",Microsoft Windows Server 2019,ovcacn07r1,2042XLB0CW
+17,EDCAWEXPDC,Exchange Active Directory,System,172.21.4.42,EDCAWEXPDC,Running,8,8,32,32,400,"200, 200",Microsoft Windows Server 2019,ovcacn09r1,2042XLB0D6
+18,EDCAWEXWitness,Exchange Witness,System,172.21.4.43,EDCAWEXWITNESS,Running,8,8,16,16,400,"200, 200",Microsoft Windows Server 2019,ovcacn07r1,2042XLB0CW
+19,EDCAWNPMAPP,Solarwinds NPM APP,Network,172.21.4.46,,Running,10,10,16,16,200,200,Microsoft Windows Server 2019,ovcacn10r1,2042XLB0CL
+20,EDCAWNPMDB,Solarwinds NPM DB,Network,172.21.4.47,,Running,6,8,16,16,500,"100,400",Microsoft Windows Server 2019,ovcacn07r1,2042XLB0CW
+21,EDCAWCOMMSRV,Commvault Server,System,172.21.4.48,EDCAWCOMMSRV,Running,8,8,32,32,800,"300,500",Microsoft Windows Server 2019,ovcacn10 r1,2042XLB0CL
+22,EDCBOND,Bond Server,Nazmul Sir,172.21.4.51,,Running,4,4,16,16,200,200,Oracle Linux 7,ovcacn07r1,2042XLB0CW
+23,EDCBONDWIN-10,Bond Windows-10,Nazmul Sir,172.21.4.52,,Running,4,4,16,16,200,200,Windows-10,ovcacn08r1,2042XLB0D7
+24,EDCAWEM,Oracle EM 13c,kader,172.21.4.100,edcawem,Running,8,8,64,64,400,"100,300",Oracle Linux 8,ovcacn12r1,2042XLB0D5
+25,EDCAWWEBPROD01,AW Web Server (jnlp) & Portal-01 (Server-01),Sarwar Sir,172.21.24.12,,Running,8,8,16,16,2248,"200, 2048",Oracle Linux 7,ovcacn07r1,2042XLB0CW
+26,EDCAWTESTDB-02,AW Test Database-02,Sarwar Sir,172.21.8.12,,Running,32,32,128,128,,,Oracle Linux 7,ovcacn09r1,2042XLB0D6
+27,EDCAWWEBPROD02,AW Web Server (jnlp)& Portal-02,Sarwar Sir,172.21.24.13,,Running,8,8,16,16,2248,"200, 2048",Oracle Linux 7,ovcacn12r1,2042XLB0D5
+28,EDCAWFTP,AW FTP Server,Sarwar Sir,172.21.24.14,,Running,2,2,8,8,700,"100, 600",Oracle Linux 7,ovcacn10r1,2042XLB0CL
+29,EDCAWEX,Mail Server,System,172.21.24.16,EDCAWEX,Running,16,16,128,128,2548,"200, 300, 1024, 1024",Microsoft Windows Server 2019,ovcacn10r1,2042XLB0CL
+30,EDCAWAEX,Additional Mail Server,System,172.21.24.17,EDCAWAEX,Running,16,16,128,128,2548,"200, 300, 1024, 1024",Microsoft Windows Server 2019,ovcacn07r1,2042XLB0CW
+31,EDCAWEXWA,Exchange Web App Server,System,172.21.24.18,EDCAWEXWA,Running,8,8,16,16,400,"200, 200",Microsoft Windows Server 2019,ovcacn07r1,2042XLB0CW
+32,EDCSOPHOSUM,Sophos Message Relay Server(Update Manager),Network,172.21.24.20,,Running,4,4,12,12,300,"100,200",Microsoft Windows Server 2019,ovcacn09r1,2042XLB0D6
+33,EDCPOSTMASTER-OTP,AW Postmaster OTP,Software,172.21.24.21,,Running,8,8,16,16,200,200,Oracle Linux 7,ovcacn10r1,2042XLB0CL
+34,EDCAWPOSTMASTER,AW Postmaster,Software,172.21.24.22,,Running,8,8,16,16,100,100,Cent OS 7,ovcacn09r1,2042XLB0D6
+35,EDCAWETICKET,eTicket (HelpDesk Support),Software,172.21.24.23,,Running,4,4,12,12,200,200,Oracle Linux 7,ovcacn12r1,2042XLB0D5
+36,BDCUSTOMSINFO,BD Customs Report,Second Secretary,172.21.24.50,,Running,2,2,4,4,50,50,Oracle Linux 7,ovcacn08r1,2042XLB0D7
+37,EDCBMAPAPP,BMAP App,Sarwar Sir,172.21.18.13,,Running,16,24,32,32,1024,,Oracle Linux 7,ovcacn12r1,2042XLB0D5
+38,EDCBMAPDB,BMAP Database,Sarwar Sir,172.21.18.12,,Running,16,24,32,32,1124,"100, 1024",Oracle Linux 7,ovcacn12r1,2042XLB0D5
+39,EDCBMAPWEB,BMAP Web,Sarwar Sir,172.21.31.12,,Running,8,8,16,16,1024,1024,Oracle Linux 7,ovcacn07r1,2042XLB0CW
+40,EDCAWMSQ-01,edcawmsq-01,Sarwar Sir,172.21.4.53,,Running,2,2,4,4,100,100,Oracle Linux 7.9,ovcacn09r1,2042XLB0D6
+41,EDCAWMSQ-02,edcawmsq-02,Sarwar Sir,172.21.24.24,,Running,2,2,4,4,100,100,Oracle Linux 7.9,ovcacn09r1,2042XLB0D6
+42,EDCCOMMSRVVSA,Commsrv VSA Agent,System,172.21.4.54,EDCCOMMSRVVSA,Running,4,4,16,16,50,50,Oracle Linux 7.9,ovcacn08r1,2042XLB0D7

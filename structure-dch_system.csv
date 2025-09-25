@@ -1,0 +1,52 @@
+include,house,area,building,floor,room,rack,rack-make,rack-u-count,rack-model,tag,rack-position,type,make,model,Mgmt IP,Service IP,name,OS,Cluster IP,Remarks
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2046NMG00C,1-3,Server,Oracle ,Oracle T8-2,10.60.24.15,172.21.32.12,T8-2 APP 01,Solaris 11.4,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2046NMG00D,4-6,Server,Oracle ,Oracle T8-2,10.60.24.17,172.21.32.13,T8-2 APP 02,Solaris 11.4,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2046NMG00E,7-9,Server,Oracle ,Oracle T8-2,10.60.24.19,10.60.24.20,T8-2 UAT,Solaris 11.4,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2047XC209G,10-11,Storage,Oracle ,Oracle ZS7-2,10.60.24.58,10.60.24.56,ZFS Controller 01,OS 8.72,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2047XC209D,12-13,Storage,Oracle ,Oracle ZS7-2,10.60.24.60,10.60.24.57,ZFS Controller 02,OS 8.72,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2046NMS802,14-15,Storage,Oracle ,Oracle DE3-24P,,,ZFS Disk Self 01,,,"No IP and OS for storage disk shelve.
+Although they do not have IP address, they need to be displayed."
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2048NMQ808,16-19,Storage,Oracle ,Oracle DE3-24C,,,ZFS Disk Self 02,,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2048NMQ807,20-23,Storage,Oracle ,Oracle DE3-24C,,,ZFS Disk Self 03,,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2239NMS80C,24-34,Storage,Oracle ,Oracle DE3-24P,,,ZFS Disk Self BMAP,,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2117XCB00G,26,Server,Oracle ,Oracle X8-2,10.60.24.25,172.21.36.56,X8-2 BI Live Database,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2117XCB00H,27,Server,Oracle ,Oracle X8-2,10.60.24.27,10.60.24.28,X8-2 Vmware,Vmware 6.7,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2117XCB00J,28,Server,Oracle ,Oracle X8-2,10.60.24.29,172.21.56.12,X8-2 Web,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,2117XCB00F,29,Server,Oracle ,Oracle X8-2,10.60.24.31,172.21.32.14,X8-2  APP 01,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,BNL3TD3,30-31,Server,Dell EMC,Dell Power Edge R740,10.60.24.33,172.21.51.33,Media Server,Windows Server 2019,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,BRCEWY1951R06E,35,san-switch,Dell EMC,DS-6600B,10.60.24.51,,SAN SW 01, v8.2.1c,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-03,Oracle ,42,SUN Oracle ,BRCEWY1952R07H,36,san-switch,Dell EMC,DS-6600B,10.60.24.52,,SAN SW 02, v8.2.1c,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,2238NMG00E,1-3,Server,Oracle ,Oracle T8-2,10.60.24.41,10.60.24.141,BMAP Server 01,Solaris 11.4,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,2238NMG00C,4-6,Server,Oracle ,Oracle T8-2,10.60.24.42,10.60.24.142,BMAP Server 02,Solaris 11.4,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,2238NMG00D,7-9,Server,Oracle ,Oracle T8-2,10.60.24.43,10.60.24.143,BMAP Server 03,Solaris 11.4,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,SHFNC2121000052,21-22,Storage,NetApp,DS212C,,,"Shelf 1.0, Shelf 1.1",,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,SHJSG2116000162,21-22,Storage,NetApp,DS212C,,,"Shelf 1.0, Shelf 1.1",,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,952115000277,23-24,Storage,NetApp,FAS 2720,10.60.24.96,10.60.24.98,"edcawbackupstorage-01, edcawbackupstorage-02",ONTAP 9.8p6,10.60.24.100,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,952115000399,23-24,Storage,NetApp,FAS 2720,10.60.24.97,10.60.24.99,"edcawbackupstorage-01, edcawbackupstorage-02",ONTAP 9.8p6,10.60.24.100,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-05,Oracle ,42,SUN Oracle ,1326FM505G,24-25,Server,Oracle ,X3-2L,10.60.24.34,172.21.57.101,X3-2L,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,2041XLB03K,16,Server,Oracle ,Oracle X8-2,10.60.24.75,172.21.32.70,Exadata-DB-Node1,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,2046XLB0BG,17,Server,Oracle ,Oracle X8-2,10.60.24.76,172.21.32.71,Exadata-DB-Node2,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,2046XLA0FY,2-3,Storage,Oracle ,Oracle X8-2,10.60.24.77,,Exadata-Cell-Node1,24.1.9.0.0250213,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,2046XLA0G4,4-5,Storage,Oracle ,Oracle X8-2,10.60.24.78,,Exadata-Cell-Node2,24.1.9.0.0250213,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,2046XLA0G8,6-7,Storage,Oracle ,Oracle X8-2,10.60.24.79,,Exadata-Cell-Node3,24.1.9.0.0250213,,
+Yes,DC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,FDO24070BX6,21,exadata-switch,Cisco,cisco Nexus9000 C9348GC-FXP ,,10.60.24.80,Management Switch,NXOS: version 7.0(3)I7(8),,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,NEDCQ0056,20,exadata-switch,Oracle ,Sun Datacenter InfiniBand Switch 36,10.60.24.81,,InfiniBand Switch1,2.2.17-2,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-08,Oracle ,42,SUN Oracle ,NEDCQ0170,22,exadata-switch,Oracle ,Sun Datacenter InfiniBand Switch 36,10.60.24.82,,InfiniBand Switch2,2.2.17-2,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2047XCB0BB,37,Server,Oracle ,Oracle X8-2,10.60.24.13,,Gateway Server,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2043XL200F,1-2,Storage,Oracle ,Oracle ZS7-2,192.168.4.101,192.168.4.1,ZFS Controller 01,OS8.8.57,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2043XL200D,3-4,Storage,Oracle ,Oracle ZS7-2,192.168.4.102,192.168.4.2,ZFS Controller 02,OS8.8.57,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2043XLB00E,5,Server,Oracle ,Oracle X8-2,192.168.4.103,192.168.4.3,Management Node 01,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2043XLB00P,6,Server,Oracle ,Oracle X8-2,192.168.4.104,192.168.4.4,Management Node 02,Oracle Linux 7.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2042XLB0CJ,7,Server,Oracle ,Oracle X8-2,192.168.4.110,192.168.4.10,Conpute Node 01,Oracle VM server release 3.4.7,,ovcasw15r1
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2042XLB0CN,8,Server,Oracle ,Oracle X8-2,192.168.4.108,192.168.4.8,Conpute Node 02,Oracle VM server release 3.4.8,,ovcasw16r1
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2042XLB0DD,9,Server,Oracle ,Oracle X8-2,192.168.4.106,192.168.4.6,Conpute Node 03,Oracle VM server release 3.4.9,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2042XLB0CU,10,Server,Oracle ,Oracle X8-2,192.168.4.105,192.168.4.5,Conpute Node 04,Oracle VM server release 3.4.10,,ovcasw21r1
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2042XLB0CY,11,Server,Oracle ,Oracle X8-2,192.168.4.107,192.168.4.7,Conpute Node 05,Oracle VM server release 3.4.11,,ovcasw22r1
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2042XLB0CE,12,Server,Oracle ,Oracle X8-2,192.168.4.109,192.168.4.9,Conpute Node 06,Oracle VM server release 3.4.12,,ovcasw23r1
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,FDO24350134,15,server-switch,Cisco, cisco Nexus 9000 C9336C-FX2,,192.168.4.202,Leaf Switch 01,NXOS: version 10.2(5),,N9K-C9336C-FX2
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,FDO2435015S,16,server-switch,Cisco, cisco Nexus 9000 C9336C-FX2,,192.168.4.203,Leaf Switch 02,NXOS: version 10.2(5),,N9K-C9336C-FX2
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,2042NMQ822,17-20,Storage,Oracle ,Oracle DE3-24C,,,ZFS Disk Self,,,
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,FDO24200YET,21,server-switch,Cisco,cisco Nexus 9000 C9348GC-FXP ,,192.168.4.230,Management Switch,NXOS: version 10.2(5),,N9K-C9348GC-FXP
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,FDO2434105L,22,server-switch,Cisco, cisco Nexus 9000 C9336C-FX2,,192.168.4.204,Spine Switch 01,NXOS: version 10.2(5),,N9K-C9336C-FX2
+Yes,NDC,Data Center,Dhaka Customs House Building,2nd,Data Center,Rack-09,Oracle ,42,SUN Oracle ,POG2433ZE1K,23,server-switch,Cisco, cisco Nexus 9000 C9336C-FX2,,192.168.4.205,Spine Switch 02,NXOS: version 10.2(5),,N9K-C9336C-FX2
+,,,,,,,,,SUN Oracle ,,,,,,,,,,,
