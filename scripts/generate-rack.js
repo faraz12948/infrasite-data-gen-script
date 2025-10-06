@@ -141,8 +141,12 @@ async function processExcelSheets(
               tag: tag,
               rack_position: rackPosition,
               equipment_name: name,
-              extra_device_specification: JSON.stringify(
-                specGenerator(type, mgmtIp, serviceIp, clusterIp, os)
+              extra_device_specification: specGenerator(
+                type,
+                mgmtIp,
+                serviceIp,
+                clusterIp,
+                os
               ),
             },
           ],
@@ -172,10 +176,10 @@ async function processExcelSheets(
 // Example usage:
 const sheetNames = [
   // "structure-dc-network",
-  "structure-dc_system",
+  // "structure-dc_system",
   // "structure-NBR-New-Bldg",
   // "structure-dch-network",
-  "structure-dch_system",
+  // "structure-dch_system",
   // "structure-dch",
   // "structure-mch",
   // "structure-mch_moduler",
@@ -194,7 +198,7 @@ const sheetNames = [
   // "structure-dhakabond",
   // "structure-adamjee",
   // "structure-UEPZ",
-  // "structure-dhaka-epz",
+  "structure-dhaka-epz",
   // "structure-cepz",
   // "structure-darshana",
   // "structure-bhomra",

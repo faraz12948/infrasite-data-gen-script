@@ -156,10 +156,10 @@ async function processExcelSheets(
 // Example usage:
 const sheetNames = [
   // "structure-dc-network",
-  "structure-dc_system",
+  // "structure-dc_system",
   // "structure-NBR-New-Bldg",
   // "structure-dch-network",
-  "structure-dch_system",
+  // "structure-dch_system",
   // "structure-dch",
   // "structure-mch",
   // "structure-mch_moduler",
@@ -168,8 +168,8 @@ const sheetNames = [
   // "structure-nbr-dr-network",
   // "structure-cch_moduler",
   // "structure-cch",
-  "structure-icd",
-  "structure-icd_moduler",
+  // "structure-icd",
+  // "structure-icd_moduler",
   // "structure-bch",
   // "structure-bch_moduler",
   // "structure-pch",
